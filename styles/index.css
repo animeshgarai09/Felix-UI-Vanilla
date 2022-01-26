@@ -1,0 +1,32 @@
+.container {
+  width: 100vw;
+  height: calc(100vh - 82px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__text {
+  width: 58vw;
+  text-align: center;
+}
+.container__text h1 {
+  margin-bottom: 1.5rem;
+  font-size: 3.6rem;
+  line-height: 1.4;
+}
+.container__text h1 span {
+  color: var(--primary);
+}
+.container__text p:first-of-type {
+  font-size: 1.31rem;
+  margin-bottom: 0.5rem;
+}
+.container__text p:last-of-type {
+  color: #9f9f9f;
+  font-size: 1rem;
+  margin: 0 8rem;
+  margin-bottom: 1.5rem;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,109 @@
+@import "../utils/functions.scss";
+.main {
+    display: flex;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 rem(20);
+    position: relative;
+    .side_container {
+        position: sticky;
+        top: calc(2rem + 82px);
+        width: 14rem;
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 82px - 2rem);
+        overflow-y: scroll;
+        border-right: 2px solid #e7e7e7;
+        h6 {
+            margin-bottom: 1.2rem;
+        }
+        .link {
+            font-size: 15px;
+            color: var(--gray-2);
+            margin-bottom: 1rem;
+            &:before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 3px;
+                margin-right: 1rem;
+                background: var(--gray-1);
+                transition: 0.3s;
+            }
+            &:hover {
+                color: var(--primary);
+                &:before {
+                    margin-right: 1.4rem;
+                }
+            }
+            &.active {
+                color: var(--primary);
+                &:before {
+                    background: var(--primary);
+                }
+            }
+        }
+    }
+
+    .container {
+        flex: 1;
+        min-width: 0;
+        .sub_container {
+            flex: auto;
+            width: 100%;
+            padding: 0 clamp(1rem, 3rem, 5rem);
+        }
+    }
+
+    h1,
+    h4 {
+        margin-top: 2.4rem;
+        margin-bottom: 1.3rem;
+    }
+    h1,
+    h3,
+    p,
+    ul,
+    li {
+        code {
+            font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 14px;
+            color: #8d66d6;
+        }
+    }
+    ul {
+        padding-left: 1.2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    code span {
+        font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 14px;
+    }
+    span > code {
+        margin: 1rem 1.5rem;
+    }
+
+    .element_container {
+        border: 1px solid #ededed;
+        background: #ffffff;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0.7rem;
+        margin-bottom: 1rem;
+        > span {
+            margin-right: 0.4rem;
+        }
+        &.align_center {
+            align-items: center;
+        }
+        &.column {
+            flex-direction: column;
+        }
+        &.block {
+            display: block;
+        }
+    }
+}

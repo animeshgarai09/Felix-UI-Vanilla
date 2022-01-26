@@ -1,0 +1,105 @@
+.main {
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  position: relative;
+}
+.main .side_container {
+  position: sticky;
+  top: calc(2rem + 82px);
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 82px - 2rem);
+  overflow-y: scroll;
+  border-right: 2px solid #e7e7e7;
+}
+.main .side_container h6 {
+  margin-bottom: 1.2rem;
+}
+.main .side_container .link {
+  font-size: 15px;
+  color: var(--gray-2);
+  margin-bottom: 1rem;
+}
+.main .side_container .link:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  margin-right: 1rem;
+  background: var(--gray-1);
+  transition: 0.3s;
+}
+.main .side_container .link:hover {
+  color: var(--primary);
+}
+.main .side_container .link:hover:before {
+  margin-right: 1.4rem;
+}
+.main .side_container .link.active {
+  color: var(--primary);
+}
+.main .side_container .link.active:before {
+  background: var(--primary);
+}
+.main .container {
+  flex: 1;
+  min-width: 0;
+}
+.main .container .sub_container {
+  flex: auto;
+  width: 100%;
+  padding: 0 3rem;
+}
+.main h1,
+.main h4 {
+  margin-top: 2.4rem;
+  margin-bottom: 1.3rem;
+}
+.main h1 code,
+.main h3 code,
+.main p code,
+.main ul code,
+.main li code {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 14px;
+  color: #8d66d6;
+}
+.main ul {
+  padding-left: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.main code span {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 14px;
+}
+.main span > code {
+  margin: 1rem 1.5rem;
+}
+.main .element_container {
+  border: 1px solid #ededed;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+}
+.main .element_container > span {
+  margin-right: 0.4rem;
+}
+.main .element_container.align_center {
+  align-items: center;
+}
+.main .element_container.column {
+  flex-direction: column;
+}
+.main .element_container.block {
+  display: block;
+}
+
+/*# sourceMappingURL=documentation.css.map */
