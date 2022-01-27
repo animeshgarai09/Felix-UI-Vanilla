@@ -52,11 +52,10 @@ body {
   color: var(--text-color);
   line-height: 1.5em;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
