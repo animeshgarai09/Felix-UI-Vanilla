@@ -1,0 +1,123 @@
+@import "../../utils/functions.scss";
+.btn {
+    margin: 0 0.5rem;
+    border: 0;
+    outline: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 1.5;
+    letter-spacing: 0.25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
+    }
+    &--xs {
+        font-size: rem(11);
+        padding: 0 rem(8);
+        height: 1.5rem;
+    }
+    &--sm {
+        font-size: rem(13);
+        padding: 0 rem(12);
+        height: 2rem;
+    }
+    &--md {
+        font-size: rem(15);
+        padding: 0 rem(18);
+        height: 2.5rem;
+    }
+    &--lg {
+        font-size: rem(17);
+        padding: 0 rem(24);
+        height: 3rem;
+        svg {
+            font-size: 1.6rem;
+        }
+    }
+    &--primary {
+        background-color: var(--primary);
+        color: var(--white);
+        &:hover {
+            background: var(--primary-dark);
+        }
+    }
+    &--info {
+        background-color: var(--blue);
+        color: var(--white);
+    }
+    &--success {
+        background: var(--green);
+        color: var(--white);
+    }
+    &--warning {
+        background: var(--yellow);
+        color: var(--white);
+    }
+    &--danger {
+        background: var(--red);
+        color: var(--white);
+    }
+    &--disable {
+    }
+    &--round {
+        border-radius: 5rem;
+    }
+    &--outline {
+        background: var(--primary-light);
+        color: var(--primary);
+        border: 2px solid var(--primary);
+        &:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+    }
+    &--ghost {
+        background: var(--primary-light);
+        border: none;
+        color: var(--primary);
+        &:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+    }
+    &--link {
+        background: none;
+        border: none;
+        color: var(--primary);
+        &:hover {
+            background: none;
+            color: var(--primary);
+            text-decoration: underline;
+            transform: none;
+            box-shadow: none;
+        }
+    }
+    &--left {
+        flex: row;
+        svg {
+            margin-right: 0.3rem;
+        }
+    }
+    &--right {
+        flex-flow: row-reverse;
+        svg {
+            margin-left: 0.3rem;
+        }
+    }
+
+    &__icon {
+        &--md {
+            padding: 0 0.6rem;
+            font-size: 1.301rem;
+        }
+        svg {
+            margin: 0;
+        }
+    }
+}

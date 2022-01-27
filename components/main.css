@@ -1,0 +1,17 @@
+@import url("./alert/alert.css");
+@import url("./button/button.css");
+
+:root {
+    --primary: #3bb77e;
+    --primary-light: #def9ec;
+    --primary-dark: #29a56c;
+    --secondary: #fdc040;
+    --black: #2d3748;
+    --white: #ffffff;
+    --text-color: var(--black);
+    --page-bg: #f7f7f7;
+    --green: #20a779;
+    --red: #fd4e4e;
+    --yellow: #f8aa1c;
+    --blue: #007bc3;
+}

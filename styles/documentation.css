@@ -73,9 +73,14 @@
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
+.main code,
 .main code span {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 14px;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  font-size: 0.9375rem;
+}
+.main code.hljs {
+  border-radius: 0.625rem;
+  padding: 1rem 2rem;
 }
 .main span > code {
   margin: 1rem 1.5rem;

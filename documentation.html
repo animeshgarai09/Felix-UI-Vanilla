@@ -5,8 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Documentation | Felix UI</title>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css" />
         <link rel="stylesheet" href="styles/documentation.css" />
         <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="components/main.css" />
+        <script src="https://kit.fontawesome.com/d98a516469.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="header">
@@ -25,10 +28,10 @@
                 <a href="" class="link">Colors</a>
                 <a href="" class="link">Typography</a>
                 <h6>Components</h6>
-                <a href="" class="link">Alert</a>
+                <a href="#alert" class="link">Alert</a>
                 <a href="" class="link">Avatar</a>
                 <a href="" class="link">Badge</a>
-                <a href="" class="link">Button</a>
+                <a href="#button" class="link">Button</a>
                 <a href="" class="link">Card</a>
                 <a href="" class="link">Grid</a>
                 <a href="" class="link">Image</a>
@@ -39,8 +42,208 @@
                 <a href="" class="link">Toggle Button</a>
             </aside>
             <div class="container">
-                <div class="sub_container"></div>
+                <div class="sub_container">
+                    <!------------------------------------------------------- Alert section ------------------------------------------------------->
+
+                    <section id="alert">
+                        <h1>Alert</h1>
+                        <p>Alerts are used to communicate a state that affects a system, feature or page.</p>
+                        <h4>Example</h4>
+                        <div class="element_container column">
+                            <div class="alert alert--success" role="alert">
+                                <div class="alert__icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="alert__text">
+                                    <span>Data uploaded to the server. Fire on!</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Alert theme</h4>
+                        <p>Alerts are available in 4 different color scheme show case any system alert to users</p>
+                        <div class="element_container column">
+                            <div class="alert alert--success" role="alert">
+                                <div class="alert__icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="alert__text">
+                                    <span>Data uploaded to the server. Fire on!</span>
+                                </div>
+                            </div>
+                            <div class="alert alert--info" role="alert">
+                                <div class="alert__icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="alert__text">
+                                    <span>Update is ready to be installed.</span>
+                                </div>
+                            </div>
+                            <div class="alert alert--warning" role="alert">
+                                <div class="alert__icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="alert__text">
+                                    <span>Seems your account is about to expire, upgrade now.</span>
+                                </div>
+                            </div>
+                            <div class="alert alert--error" role="alert">
+                                <div class="alert__icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="alert__text">
+                                    <span>There was an error processing your request!</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <pre>
+    <code class="html">
+<!-- Success alert -->
+
+<div class="alert alert--success" role="alert">
+    <div class="alert__icon">
+        <i class="fas fa-check"></i>
+    </div>
+    <div class="alert__text">
+        <span>Data uploaded to the server. Fire on!</span>
+    </div>
+</div>
+
+<!-- Info alert -->
+
+<div class="alert alert--info" role="alert">
+    <div class="alert__icon">
+        <i class="fas fa-check"></i>
+    </div>
+    <div class="alert__text">
+        <span>Update is ready to be installed.</span>
+    </div>
+</div>
+
+<!-- Warning alert -->
+
+<div class="alert alert--warning" role="alert">
+    <div class="alert__icon">
+        <i class="fas fa-check"></i>
+    </div>
+    <div class="alert__text">
+        <span>Seems your account is about to expire, upgrade now.</span>
+    </div>
+</div>
+
+<!-- Error alert -->
+
+<div class="alert alert--error" role="alert">
+    <div class="alert__icon">
+        <i class="fas fa-check"></i>
+    </div>
+    <div class="alert__text">
+        <span>There was an error processing your request!</span>
+    </div>
+</div>
+    </code>
+</pre>
+                        <h4>Alerts variant</h4>
+                        <p>Alerts can have extra information with description and can also have a close button.</p>
+                        <div class="element_container column">
+                            <div class="alert alert--error" role="alert">
+                                <div class="alert__icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="alert__text">
+                                    <span>There was an error processing your request!</span>
+                                    <span>Request can not be processed due to insufficient funds in account.</span>
+                                </div>
+                                <button class="btn alert__close"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <pre>
+    <code class="html">
+<div class="alert alert--error" role="alert">
+    <div class="alert__icon">
+        <i class="fas fa-check"></i>
+    </div>
+    <div class="alert__text">
+        <span>There was an error processing your request!</span>
+        <span>Request can not be processed due to insufficient funds in account.</span>
+    </div>
+    <button class="btn alert__close"><i class="fas fa-times"></i></button>
+</div>
+    </code>
+    </pre>
+                    </section>
+
+                    <!------------------------------------------------------- Button section ------------------------------------------------------->
+
+                    <section id="button">
+                        <h1>Button</h1>
+                        <p>The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.</p>
+
+                        <h4>Examples</h4>
+                        <p>Felix UI includes several predefined button styles, each serving its own semantic purpose.</p>
+                        <div class="element_container">
+                            <button class="btn btn--primary">Primary</button>
+                            <button class="btn btn--info">Info</button>
+                            <button class="btn btn--success">Success</button>
+                            <button class="btn btn--warning">Primary</button>
+                            <button class="btn btn--danger">Danger</button>
+                            <!-- <button class="btn btn--primary">Primary</button> -->
+                        </div>
+                        <pre>
+    <code class="html">
+<button class="btn btn--primary">Primary</button>
+<button class="btn btn--info">Info</button>
+<button class="btn btn--success">Success</button>
+<button class="btn btn--warning">Primary</button>
+<button class="btn btn--danger">Danger</button>
+    </code>
+</pre>
+                        <h4>Button variants</h4>
+                        <div class="element_container">
+                            <button class="btn btn--primary btn--round">Primary</button>
+                            <button class="btn btn--primary btn--outline">Primary</button>
+                            <button class="btn btn--primary btn--round btn--outline">Primary</button>
+                            <button class="btn btn--primary btn--ghost">Primary</button>
+                            <button class="btn btn--primary btn--link">Primary</button>
+                        </div>
+                        <pre>
+    <code class="html">
+<button class="btn btn--primary btn--round">Primary</button>
+<button class="btn btn--primary btn--outline">Primary</button>
+<button class="btn btn--primary btn--round btn--outline">Primary</button>
+<button class="btn btn--primary btn--ghost">Primary</button>
+    </code>
+</pre>
+                    </section>
+                </div>
             </div>
         </main>
+
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+        <script>
+            const sections = document.querySelectorAll("section")
+            const link = document.querySelectorAll(".link")
+            window.onscroll = () => {
+                var current = ""
+
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop
+                    if (pageYOffset >= sectionTop - 200) {
+                        current = section.getAttribute("id")
+                    }
+                })
+
+                link.forEach((item) => {
+                    item.classList.remove("active")
+                    if (item.href.includes(current)) {
+                        item.classList.add("active")
+                    }
+                })
+            }
+            document.querySelectorAll("code").forEach((element) => {
+                element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;")
+            })
+            hljs.initHighlightingOnLoad()
+        </script>
     </body>
 </html>
