@@ -89,7 +89,9 @@
     span > code {
         margin: 1rem 1.5rem;
     }
-
+    section {
+        scroll-margin-top: 7rem;
+    }
     .element_container {
         border: 1px solid #ededed;
         background: #ffffff;
@@ -100,6 +102,9 @@
         margin-bottom: 1rem;
         > span {
             margin-right: 0.4rem;
+        }
+        .icon-badge {
+            margin-right: 1.5rem;
         }
         &.align_center {
             align-items: center;

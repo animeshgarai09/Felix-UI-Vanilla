@@ -85,6 +85,9 @@
 .main span > code {
   margin: 1rem 1.5rem;
 }
+.main section {
+  scroll-margin-top: 7rem;
+}
 .main .element_container {
   border: 1px solid #ededed;
   background: #ffffff;
@@ -96,6 +99,9 @@
 }
 .main .element_container > span {
   margin-right: 0.4rem;
+}
+.main .element_container .icon-badge {
+  margin-right: 1.5rem;
 }
 .main .element_container.align_center {
   align-items: center;

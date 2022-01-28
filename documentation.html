@@ -29,17 +29,17 @@
                 <a href="" class="link">Typography</a>
                 <h6>Components</h6>
                 <a href="#alert" class="link">Alert</a>
-                <a href="" class="link">Avatar</a>
-                <a href="" class="link">Badge</a>
+                <a href="#avatar" class="link">Avatar</a>
+                <a href="#badge" class="link">Badge</a>
                 <a href="#button" class="link">Button</a>
                 <a href="" class="link">Card</a>
-                <a href="" class="link">Grid</a>
+                <!-- <a href="" class="link">Grid</a> -->
                 <a href="" class="link">Image</a>
                 <a href="" class="link">Input</a>
-                <a href="" class="link">List</a>
+                <!-- <a href="" class="link">List</a>
                 <a href="" class="link">Modal</a>
                 <a href="" class="link">Navigation</a>
-                <a href="" class="link">Toggle Button</a>
+                <a href="" class="link">Toggle Button</a> -->
             </aside>
             <div class="container">
                 <div class="sub_container">
@@ -48,7 +48,7 @@
                     <section id="alert">
                         <h1>Alert</h1>
                         <p>Alerts are used to communicate a state that affects a system, feature or page.</p>
-                        <h4>Example</h4>
+                        <h4>Examples</h4>
                         <div class="element_container column">
                             <div class="alert alert--success" role="alert">
                                 <div class="alert__icon">
@@ -169,6 +169,258 @@
     </div>
     <button class="btn alert__close"><i class="fas fa-times"></i></button>
 </div>
+    </code>
+    </pre>
+                    </section>
+
+                    <!------------------------------------------------------- Avatar section ------------------------------------------------------->
+
+                    <section id="avatar">
+                        <h1>Avatar</h1>
+                        <p>Avatar is used to represent a user, and displays the profile picture or initials.</p>
+                        <h4>Examples</h4>
+                        <div class="element_container">
+                            <div class="avatar avatar--md">
+                                <img src="/images/1.jpeg" alt="Dan Abrahmov" />
+                            </div>
+                            <div class="avatar avatar--md">
+                                <img src="/images/2.jpeg" alt="Kola Tioluwani" />
+                            </div>
+                            <div class="avatar avatar--md">
+                                <img src="/images/3.jpg" alt="Kent Dodds" />
+                            </div>
+                            <div class="avatar avatar--md">
+                                <img src="/images/4.jpg" alt="Ryan Florence" />
+                            </div>
+                        </div>
+
+                        <pre>
+    <code class="html">
+<div class="avatar avatar--md">
+    <img src="/images/1.jpeg" alt="Dan Abrahmov" />
+</div>
+<div class="avatar avatar--md">
+    <img src="/images/2.jpeg" alt="Kola Tioluwani" />
+</div>
+<div class="avatar avatar--md">
+    <img src="/images/3.jpg" alt="Kent Dodds" />
+</div>
+<div class="avatar avatar--md">
+    <img src="/images/4.jpg" alt="Ryan Florence" />
+</div>
+    </code>
+</pre>
+                        <h4>Avatar size</h4>
+                        <p>The Avatar component comes in 6 sizes. check examples for better understanding.</p>
+                        <div class="element_container">
+                            <div class="avatar avatar--xs">
+                                <img src="/images/1.jpeg" alt="Dan Abrahmov" />
+                            </div>
+                            <div class="avatar avatar--sm">
+                                <img src="/images/2.jpeg" alt="Kola Tioluwani" />
+                            </div>
+                            <div class="avatar avatar--md">
+                                <img src="/images/3.jpg" alt="Kent Dodds" />
+                            </div>
+                            <div class="avatar avatar--lg">
+                                <img src="/images/4.jpg" alt="Ryan Florence" />
+                            </div>
+                            <div class="avatar avatar--xl">
+                                <img src="/images/1.jpeg" alt="Dan Abrahmov" />
+                            </div>
+                            <div class="avatar avatar--xxl">
+                                <img src="/images/2.jpeg" alt="Kola Tioluwani" />
+                            </div>
+                        </div>
+                        <pre>
+    <code class="html">
+<div class="avatar avatar--xs">
+    <img src="/images/1.jpeg" alt="Dan Abrahmov" />
+</div>
+<div class="avatar avatar--sm">
+    <img src="/images/2.jpeg" alt="Kola Tioluwani" />
+</div>
+<div class="avatar avatar--md">
+    <img src="/images/3.jpg" alt="Kent Dodds" />
+</div>
+<div class="avatar avatar--lg">
+    <img src="/images/4.jpg" alt="Ryan Florence" />
+</div>
+<div class="avatar avatar--xl">
+    <img src="/images/1.jpeg" alt="Dan Abrahmov" />
+</div>
+<div class="avatar avatar--xxl">
+    <img src="/images/2.jpeg" alt="Kola Tioluwani" />
+</div>
+    </code>
+</pre>
+                        <h4>Avatar with text</h4>
+                        <div class="element_container">
+                            <div class="avatar avatar--md avatar--text">
+                                <span>AT</span>
+                            </div>
+                            <div class="avatar avatar--md avatar--text">
+                                <span>RE</span>
+                            </div>
+                            <div class="avatar avatar--md avatar--text">
+                                <span>SK</span>
+                            </div>
+                        </div>
+                        <pre>
+<code class="html">
+<div class="avatar avatar--md avatar--text">
+    <span>AT</span>
+</div>
+<div class="avatar avatar--md avatar--text">
+    <span>RE</span>
+</div>
+<div class="avatar avatar--md avatar--text">
+    <span>SK</span>
+</div>
+</code>
+</pre>
+                        <h4>Avatar with badges</h4>
+                        <p>Badges indicate status of a particular avatar</p>
+                        <div class="element_container">
+                            <div class="avatar avatar--md">
+                                <img src="/images/1.jpeg" alt="avatar" />
+                                <span class="avatar__badge avatar__badge--red"></span>
+                            </div>
+                            <div class="avatar avatar--md">
+                                <img src="/images/2.jpeg" alt="avatar" />
+                                <span class="avatar__badge avatar__badge--green"></span>
+                            </div>
+                            <div class="avatar avatar--md avatar--text">
+                                <span>AT</span>
+                                <span class="avatar__badge avatar__badge--yellow"></span>
+                            </div>
+                        </div>
+                        <pre>
+<code class="html">
+<div class="avatar avatar--md">
+    <img src="/images/1.jpeg" alt="avatar" />
+    <span class="avatar__badge avatar__badge--red"></span>
+</div>
+<div class="avatar avatar--md">
+    <img src="/images/2.jpeg" alt="avatar" />
+    <span class="avatar__badge avatar__badge--green"></span>
+</div>
+<div class="avatar avatar--md avatar--text">
+    <span>AT</span>
+    <span class="avatar__badge avatar__badge--yellow"></span>
+</div>
+</code>
+</pre>
+                        <h4>Avatar group</h4>
+                        <p>An avatar group is an element that communicates to the user that there is more than 1 person associated to an item.</p>
+                        <div class="element_container">
+                            <div class="avatar__group">
+                                <div class="avatar avatar--md">
+                                    <img src="/images/1.jpeg" alt="Dan Abrahmov" />
+                                </div>
+                                <div class="avatar avatar--md">
+                                    <img src="/images/2.jpeg" alt="Kola Tioluwani" />
+                                </div>
+                                <div class="avatar avatar--md avatar--text">
+                                    <span>AT</span>
+                                </div>
+                                <div class="avatar avatar--md">
+                                    <img src="/images/3.jpg" alt="Kent Dodds" />
+                                </div>
+                                <div class="avatar avatar--md">
+                                    <img src="/images/4.jpg" alt="Ryan Florence" />
+                                </div>
+                                <div class="avatar avatar--md avatar--info">
+                                    <span>+78</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <pre>
+<code class="html">
+<div class="avatar__group">
+    <div class="avatar avatar--md">
+        <img src="/images/1.jpeg" alt="Dan Abrahmov" />
+    </div>
+    <div class="avatar avatar--md">
+        <img src="/images/2.jpeg" alt="Kola Tioluwani" />
+    </div>
+    <div class="avatar avatar--md avatar--text">
+        <span>AT</span>
+    </div>
+    <div class="avatar avatar--md">
+        <img src="/images/3.jpg" alt="Kent Dodds" />
+    </div>
+    <div class="avatar avatar--md">
+        <img src="/images/4.jpg" alt="Ryan Florence" />
+    </div>
+    <div class="avatar avatar--md avatar--info">
+        <span>+78</span>
+    </div>
+</div>
+</code>
+</pre>
+                    </section>
+                    <!------------------------------------------------------- Badge section ------------------------------------------------------->
+
+                    <section id="badge">
+                        <h1>Badge</h1>
+                        <p>Badges are used to highlight an item's status for quick recognition.</p>
+                        <h4>Examples</h4>
+                        <div class="element_container">
+                            <h3>Example heading <span class="badge">new</span></h3>
+                        </div>
+                        <pre>
+<code class="html">
+<h3>Example heading <span class="badge">new</span></h3>
+    </code>
+</pre>
+                        <h4>Badge colors</h4>
+                        <div class="element_container block">
+                            <span class="badge badge--primary">New</span>
+                            <span class="badge badge--red">Sale</span>
+                            <span class="badge badge--blue">Trending</span>
+                            <span class="badge badge--green">Latest</span>
+                            <span class="badge badge--yellow">Best seller</span>
+                        </div>
+                        <pre>
+<code class="html">
+<span class="badge badge--primary">New</span>
+<span class="badge badge--red">Sale</span>
+<span class="badge badge--blue">Trending</span>
+<span class="badge badge--green">Latest</span>
+<span class="badge badge--yellow">Best seller</span>
+</code>
+    </pre>
+                        <h4>Icon badges</h4>
+                        <div class="element_container">
+                            <span class="icon-badge">
+                                <span class="badge badge--primary">99+</span>
+                                <i class="fas fa-bell"></i>
+                            </span>
+                            <span class="icon-badge">
+                                <span class="badge badge--red">15</span>
+                                <i class="fas fa-heart"></i>
+                            </span>
+                            <span class="icon-badge">
+                                <span class="badge badge--yellow">new</span>
+                                <i class="fas fa-cog"></i>
+                            </span>
+                        </div>
+                        <pre>
+<code class="html">
+<span class="icon-badge">
+    <span class="badge badge--primary">99+</span>
+    <i class="fas fa-bell"></i>
+</span>
+<span class="icon-badge">
+    <span class="badge badge--red">15</span>
+    <i class="fas fa-heart"></i>
+</span>
+<span class="icon-badge">
+    <span class="badge badge--yellow">new</span>
+    <i class="fas fa-cog"></i>
+</span>
     </code>
     </pre>
                     </section>
