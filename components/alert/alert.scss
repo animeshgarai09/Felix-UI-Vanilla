@@ -1,3 +1,5 @@
+@import "../../utils/functions.scss";
+
 .alert {
     max-width: 600px;
     padding: 0.6rem;
@@ -8,25 +10,25 @@
     margin: 0.5rem;
     box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 8%) 0px 1px 2px;
     &--success {
-        background: #c6f6d5;
+        background: var(--green-light);
         i {
             background: var(--green);
         }
     }
     &--error {
-        background: #fed6d7;
+        background: var(--red-light);
         i {
             background: var(--red);
         }
     }
     &--warning {
-        background: #feebc8;
+        background: var(--yellow-light);
         i {
             background: var(--yellow);
         }
     }
     &--info {
-        background: #bde3f8;
+        background: var(--blue--light);
         i {
             background: var(--blue);
         }
@@ -35,6 +37,8 @@
         span {
             display: block;
             &:nth-of-type(2) {
+                line-height: 1;
+                margin-top: rem(6);
                 font-size: 0.8rem;
                 color: #606060;
             }

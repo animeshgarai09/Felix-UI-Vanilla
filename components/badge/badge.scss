@@ -1,0 +1,83 @@
+@import "../../utils/functions.scss";
+
+.badge {
+    font-size: 0.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.1rem 0.4rem;
+    background: #cfcfcf;
+    border-radius: rem(3);
+    &--green {
+        background: var(--green-light);
+        color: var(--green);
+        border-color: var(--green);
+    }
+    &--red {
+        background: var(--red-light);
+        color: var(--red);
+        border-color: var(--red);
+    }
+    &--blue {
+        background: var(--blue-light);
+        color: var(--blue);
+        border-color: var(--blue);
+    }
+    &--yellow {
+        background: var(--yellow-light);
+        color: var(--yellow);
+        border-color: var(--yellow);
+    }
+    &--primary {
+        background: var(--primary-light);
+        color: var(--primary);
+        border-color: var(--primary);
+    }
+
+    &--rounded {
+        border-radius: rem(15);
+    }
+    &--outline {
+        border: 1px solid;
+    }
+}
+.icon-badge {
+    font-size: 1.8rem;
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        color: #ffffff;
+        font-weight: 600;
+        height: 1rem;
+        min-width: 1rem;
+        font-size: 0.62rem;
+        // background: var(--primary);
+        position: absolute;
+        top: 2px;
+        left: 1.22rem;
+        border: 2px solid var(--page-bg);
+        &--green {
+            background: var(--green);
+        }
+        &--red {
+            background: var(--red);
+        }
+        &--blue {
+            background: var(--blue);
+        }
+        &--yellow {
+            background: var(--yellow);
+        }
+        &--primary {
+            background: var(--primary);
+        }
+    }
+}

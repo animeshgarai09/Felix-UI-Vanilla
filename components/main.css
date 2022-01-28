@@ -1,5 +1,7 @@
 @import url("./alert/alert.css");
 @import url("./button/button.css");
+@import url("./avatar/avatar.css");
+@import url("./badge/badge.css");
 
 :root {
     --primary: #3bb77e;
@@ -11,7 +13,16 @@
     --text-color: var(--black);
     --page-bg: #f7f7f7;
     --green: #20a779;
+    --green-light: #c6f6d5;
     --red: #fd4e4e;
+    --red-light: #fed7d7;
     --yellow: #f8aa1c;
+    --yellow-light: #feebc8;
     --blue: #007bc3;
+    --blue-light: #bde3f8;
+}
+
+img {
+    max-inline-size: 100%;
+    block-size: auto;
 }
