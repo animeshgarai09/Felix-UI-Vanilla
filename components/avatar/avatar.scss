@@ -4,7 +4,6 @@
     $p: &;
     position: relative;
     display: inline-block;
-    margin: 0 0.5rem;
     border-radius: 50%;
     img {
         border-radius: 50%;
@@ -117,11 +116,15 @@
     &__group {
         display: inline-flex;
         #{$p} {
-            margin-right: -1.7rem;
+            margin-right: -1.4rem;
             border: 2px solid var(--white);
             &:last-of-type {
                 margin-right: 0;
             }
         }
+    }
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
     }
 }

@@ -1,14 +1,15 @@
 .container {
   width: 100vw;
-  height: calc(100vh - 82px);
+  height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .container__text {
   width: 58vw;
   text-align: center;
+  margin-top: 5rem;
 }
 .container__text h1 {
   margin-bottom: 1.5rem;

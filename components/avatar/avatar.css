@@ -1,7 +1,6 @@
 .avatar {
   position: relative;
   display: inline-block;
-  margin: 0 0.5rem;
   border-radius: 50%;
 }
 .avatar img {
@@ -115,11 +114,15 @@
   display: inline-flex;
 }
 .avatar__group .avatar {
-  margin-right: -1.7rem;
+  margin-right: -1.4rem;
   border: 2px solid var(--white);
 }
 .avatar__group .avatar:last-of-type {
   margin-right: 0;
+}
+.avatar img {
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 /*# sourceMappingURL=avatar.css.map */

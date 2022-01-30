@@ -1,0 +1,72 @@
+@import "../../utils/functions.scss";
+
+.input__group {
+    background: var(--input-bg);
+    border-radius: rem(6);
+    padding: rem(10) rem(15);
+    width: 100%;
+    border: 1px solid #00000017;
+    transition: 0.2s;
+    position: relative;
+    margin-bottom: rem(15);
+    &:focus-within {
+        border-color: var(--primary);
+        .input__info label {
+            color: var(--primary);
+        }
+    }
+    &.input--error {
+        border-color: var(--error);
+        .input__info {
+            label,
+            span {
+                color: var(--error);
+            }
+        }
+    }
+    .input__info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: rem(7);
+        label {
+            color: var(--label-white);
+            transition: 0.2s;
+            line-height: 1;
+        }
+        span {
+            font-size: rem(12.8);
+            transition: 0.2s;
+            line-height: 1;
+        }
+    }
+    input {
+        border: none;
+        background-image: none;
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        font-size: 0.9rem;
+        width: 100%;
+        padding: 0;
+        &:focus {
+            outline: none;
+        }
+    }
+    input[type="password"] {
+        font-family: monospace;
+        padding-right: rem(10);
+        &::-ms-reveal,
+        &::-ms-clear {
+            display: none;
+        }
+    }
+}
+.checkbox {
+    label {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
