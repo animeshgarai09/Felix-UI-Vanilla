@@ -2,6 +2,7 @@
 @import url("./button/button.css");
 @import url("./avatar/avatar.css");
 @import url("./badge/badge.css");
+@import url("./input/input.css");
 
 :root {
     --primary: #3bb77e;
@@ -22,7 +23,14 @@
     --blue-light: #bde3f8;
 }
 
-img {
+.img-fluid {
     max-inline-size: 100%;
     block-size: auto;
+    height: auto;
+}
+.round {
+    border-radius: 50%;
+}
+.justify-end {
+    justify-self: end;
 }

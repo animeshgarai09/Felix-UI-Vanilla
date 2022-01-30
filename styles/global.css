@@ -146,4 +146,36 @@ a svg {
   color: var(--primary);
 }
 
+.footer {
+  margin: 1.3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+.footer span {
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.footer span i {
+  font-size: inherit;
+  color: var(--red);
+  margin: 0 0.4rem;
+}
+.footer__links i {
+  font-size: 1.5rem;
+  margin: 0 0.8rem;
+  color: #b2b2b2;
+  transition: all 0.3s ease 0s;
+}
+.footer__links i:hover {
+  color: var(--primary);
+}
+.footer.home-footer {
+  height: auto;
+}
+
 /*# sourceMappingURL=global.css.map */

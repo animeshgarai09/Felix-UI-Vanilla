@@ -34,8 +34,8 @@
                 <a href="#button" class="link">Button</a>
                 <a href="" class="link">Card</a>
                 <!-- <a href="" class="link">Grid</a> -->
-                <a href="" class="link">Image</a>
-                <a href="" class="link">Input</a>
+                <a href="#image" class="link">Image</a>
+                <a href="#input" class="link">Input</a>
                 <!-- <a href="" class="link">List</a>
                 <a href="" class="link">Modal</a>
                 <a href="" class="link">Navigation</a>
@@ -277,7 +277,7 @@
 <div class="avatar avatar--md avatar--text">
     <span>SK</span>
 </div>
-</code>
+    </code>
 </pre>
                         <h4>Avatar with badges</h4>
                         <p>Badges indicate status of a particular avatar</p>
@@ -309,7 +309,7 @@
     <span>AT</span>
     <span class="avatar__badge avatar__badge--yellow"></span>
 </div>
-</code>
+    </code>
 </pre>
                         <h4>Avatar group</h4>
                         <p>An avatar group is an element that communicates to the user that there is more than 1 person associated to an item.</p>
@@ -358,7 +358,7 @@
         <span>+78</span>
     </div>
 </div>
-</code>
+    </code>
 </pre>
                     </section>
                     <!------------------------------------------------------- Badge section ------------------------------------------------------->
@@ -390,10 +390,14 @@
 <span class="badge badge--blue">Trending</span>
 <span class="badge badge--green">Latest</span>
 <span class="badge badge--yellow">Best seller</span>
-</code>
-    </pre>
+    </code>
+</pre>
                         <h4>Icon badges</h4>
                         <div class="element_container">
+                            <span class="icon-badge">
+                                <span class="badge badge--blue"></span>
+                                <i class="fas fa-bell"></i>
+                            </span>
                             <span class="icon-badge">
                                 <span class="badge badge--primary">99+</span>
                                 <i class="fas fa-bell"></i>
@@ -409,6 +413,10 @@
                         </div>
                         <pre>
 <code class="html">
+<span class="icon-badge">
+    <span class="badge badge--blue"></span>
+    <i class="fas fa-bell"></i>
+</span>
 <span class="icon-badge">
     <span class="badge badge--primary">99+</span>
     <i class="fas fa-bell"></i>
@@ -467,7 +475,135 @@
     </code>
 </pre>
                     </section>
+
+                    <!------------------------------------------------------- Image section ------------------------------------------------------->
+                    <section id="image">
+                        <h1>Images</h1>
+                        <p>Felix UI comes with few utility classes for images for different purpose.</p>
+                        <h4>Responsive image</h4>
+                        <p>Images in Felix UI are made responsive with <code>.img-fluid</code>. This applies <code>max-width: 100%;</code> and <code> height: auto;</code> to the image so that it scales with the parent width.</p>
+                        <div class="element_container">
+                            <img src="/images/forest.jpg" class="img-fluid" alt="" />
+                        </div>
+                        <pre>
+    <code class="html">
+<img src="/images/forest.jpg" class="img-fluid" alt="" />
+    </code>
+</pre>
+                        <h4>Rounded images</h4>
+                        <div class="element_container">
+                            <img src="/images/flower.jpg" class="img-fluid round" alt="" />
+                            <img src="/images/sp.jpg" class="img-fluid round" alt="" />
+                        </div>
+                    </section>
+                    <!------------------------------------------------------- Input section ------------------------------------------------------->
+
+                    <section id="input">
+                        <h1>Input</h1>
+                        <p>The input is used to get user input in a text field.</p>
+                        <h4>Examples</h4>
+                        <div class="element_container">
+                            <div class="input__group">
+                                <div class="input__info">
+                                    <label for="name">Full name</label>
+                                </div>
+                                <input id="name" type="text" />
+                            </div>
+                        </div>
+                        <pre>
+    <code class="html">
+<div class="input__group">
+    <div class="input__info">
+        <label for="name">Full name</label>
+    </div>
+    <input id="name" type="text" />
+</div>
+    </code>
+</pre>
+                        <h4>Input with validation</h4>
+                        <p>Inputs need to be validated before getting processed in the system. so input comes with validation messages for better user experience</p>
+                        <div class="element_container">
+                            <div class="input__group input--error">
+                                <div class="input__info">
+                                    <label for="username">Username</label>
+                                    <span>Username is not valid</span>
+                                </div>
+                                <input id="username" type="text" />
+                            </div>
+                        </div>
+                        <pre>
+    <code class="html">
+<div class="input__group input--error">
+    <div class="input__info">
+        <label for="username">Username</label>
+        <span>Username is not valid</span>
+    </div>
+    <input id="username" type="text" />
+</div>
+    </code>
+</pre>
+                        <h4>Form example</h4>
+                        <div class="element_container block">
+                            <form class="form-container">
+                                <div class="input__group">
+                                    <div class="input__info">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <input id="email" type="email" />
+                                </div>
+                                <div class="input__group">
+                                    <div class="input__info">
+                                        <label for="password">Password</label>
+                                    </div>
+                                    <input id="password" type="password" />
+                                </div>
+                                <div class="checkbox">
+                                    <input id="check" type="checkbox" />
+                                    <label for="check">Keep me signed in</label>
+                                </div>
+                                <div class="justify-end">
+                                    <button class="btn btn--primary">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                        <pre>
+    <code class="html">
+<form class="form-container">
+    <div class="input__group">
+        <div class="input__info">
+            <label for="email">Email</label>
+        </div>
+        <input id="email" type="email" />
+    </div>
+    <div class="input__group">
+        <div class="input__info">
+            <label for="password">Password</label>
+        </div>
+        <input id="password" type="password" />
+    </div>
+    <div class="checkbox">
+        <input id="check" type="checkbox" />
+        <label for="check">Keep me signed in</label>
+    </div>
+    <div class="justify-end">
+        <button class="btn btn--primary">Login</button>
+    </div>
+</form>
+    </code>
+</pre>
+                    </section>
                 </div>
+                <footer class="footer">
+                    <span>Made with <i class="fas fa-heart"></i> by Animesh Garai</span>
+                    <div class="footer__links">
+                        <a href="https://github.com/animeshgarai09"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/animeshgarai09"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/animesh-garai-29a5251b4"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:animeshgarai09@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+
+            </footer>
+        </div>
             </div>
         </main>
 
@@ -495,7 +631,7 @@
             document.querySelectorAll("code").forEach((element) => {
                 element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;")
             })
-            hljs.initHighlightingOnLoad()
+            hljs.highlightAll()
         </script>
     </body>
 </html>

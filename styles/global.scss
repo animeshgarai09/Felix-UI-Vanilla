@@ -147,3 +147,35 @@ a {
         }
     }
 }
+
+.footer {
+    margin: 1.3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    span {
+        font-size: 1rem;
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        i {
+            font-size: inherit;
+            color: var(--red);
+            margin: 0 0.4rem;
+        }
+    }
+    &__links i {
+        font-size: 1.5rem;
+        margin: 0 0.8rem;
+        color: #b2b2b2;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            color: var(--primary);
+        }
+    }
+    &.home-footer {
+        height: auto;
+    }
+}
