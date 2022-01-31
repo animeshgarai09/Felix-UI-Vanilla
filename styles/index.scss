@@ -28,4 +28,23 @@
             margin-bottom: 1.5rem;
         }
     }
+    .home-footer span:first-child {
+        margin-bottom: 1rem;
+    }
+    .actions {
+        button {
+            width: 10rem;
+            margin: 0 0.7rem;
+        }
+    }
+    .svg {
+        position: absolute;
+        bottom: 0;
+        &.left {
+            left: 0;
+        }
+        &.right {
+            right: 0;
+        }
+    }
 }

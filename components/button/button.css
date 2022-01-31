@@ -12,6 +12,9 @@
   align-items: center;
   transition: all 0.3s ease 0s;
 }
+.btn i {
+  margin-right: 0.3rem;
+}
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);

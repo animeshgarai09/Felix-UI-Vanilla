@@ -29,5 +29,22 @@
   margin: 0 8rem;
   margin-bottom: 1.5rem;
 }
+.container .home-footer span:first-child {
+  margin-bottom: 1rem;
+}
+.container .actions button {
+  width: 10rem;
+  margin: 0 0.7rem;
+}
+.container .svg {
+  position: absolute;
+  bottom: 0;
+}
+.container .svg.left {
+  left: 0;
+}
+.container .svg.right {
+  right: 0;
+}
 
 /*# sourceMappingURL=index.css.map */

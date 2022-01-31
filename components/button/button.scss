@@ -12,6 +12,9 @@
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease 0s;
+    i {
+        margin-right: 0.3rem;
+    }
     &:hover {
         transform: translateY(-3px);
         box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);

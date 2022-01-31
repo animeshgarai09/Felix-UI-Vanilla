@@ -16,17 +16,19 @@
             <div class="header__wrapper">
                 <h3>Felix-UI</h3>
                 <div class="header__links">
-                    <a href="/documentation.html">Documentation</a>
-                    <a href="#">Examples </a>
+                    <a href="/documentation.html#introduction" class="text-primary">Documentation</a>
+                    <a href="https://github.com/animeshgarai09/Felix-UI-Vanilla"
+                        ><button class="btn btn--primary btn--md btn--round btn--ghost"><i class="fab fa-github"></i>Github</button></a
+                    >
                 </div>
             </div>
         </header>
         <main class="main">
             <aside class="side_container">
                 <h6>Getting started</h6>
-                <a href="" class="link">Installation</a>
-                <a href="" class="link">Colors</a>
-                <a href="" class="link">Typography</a>
+                <a href="#introduction" class="link">Introduction</a>
+                <a href="#colors" class="link">Colors</a>
+                <a href="#typography" class="link">Typography</a>
                 <h6>Components</h6>
                 <a href="#alert" class="link">Alert</a>
                 <a href="#avatar" class="link">Avatar</a>
@@ -43,6 +45,108 @@
             </aside>
             <div class="container">
                 <div class="sub_container">
+                    <!------------------------------------------------------- Introduction section ------------------------------------------------------->
+                    
+                    <section id="introduction">
+                        <div class="hero-container">
+                            <div class="text">
+                                <h1>Felix UI</h1>
+                                <p>A light weight CSS component library to speed up your next awesome project</p>
+                            </div>
+                        </div>
+                        <!-- <h6>Felix UI is an open source styling framework, which helps Developers to use best styles and components,
+                             by using pre-defined classnames. Felix UI helps you to quickly build your Dream Project, 
+                             by focusing much on Functionality, because we take care of your Designs.</h6> -->
+                        <p class="description">Felix UI is an open source styling framework, which helps Developers to use best styles and components,
+                             by using pre-defined classnames. Felix UI helps you to quickly build your Dream Project, 
+                             by focusing much on Functionality, because we take care of your Designs.</p>
+                        <h4>Quick start</h4>
+                        <p>In order to introduce Felix UI to your project, Copy the Link given below and paste it in the <code>head</code> tag of your html, above all other style sheets.</p>
+                        <pre>
+    <code class="html">
+<link rel="stylesheet" href="https://dev--practical-knuth-a97a7e.netlify.app/components/main.css">
+    </code>
+    </pre>
+                    </section>
+                    <!------------------------------------------------------- Colors section ------------------------------------------------------->
+
+                    <section id="colors">
+                        <h1>Colors</h1>
+                        <p>Felix UI comes with pre-defined colors, which are consistent in the overall design. The colors used are chosen on a generic basis, which can be accessed by pre-defined classes.</p>
+                        
+                        <h4>Default Palette</h4>
+                        <p>Below is the color palette, used by Sparrow, listed with the hex-codes.</p>
+                        <div class="palette">
+                            <div>
+                                <span>Primary</span>
+                                <span>#3bb77e</span>
+                            </div>
+                            <div>
+                                <span>Secondary</span>
+                                <span>#2d3748</span>
+                            </div>
+                            <div>
+                                <span>Gray</span>
+                                <span>#626262</span>
+                            </div>
+                            <div>
+                                <span>Success</span>
+                                <span>#20a779</span>
+                            </div>
+                            <div>
+                                <span>Danger</span>
+                                <span>#fd4e4e</span>
+                            </div>
+                            <div>
+                                <span>Warning</span>
+                                <span>#f8aa1c</span>
+                            </div>
+                            <div>
+                                <span>Info</span>
+                                <span>#007bc3</span>
+                            </div>
+                        </div>
+                        <h4>Utility classes for colors</h4>
+                        <div class="util-colors">
+                            <span class="bg-primary">.bg-primary</span>
+                            <span class="bg-secondary">.bg-secondary</span>
+                            <span class="bg-gray">.bg-gray</span>
+                            <span class="bg-success">.bg-success</span>
+                            <span class="bg-danger">.bg-danger</span>
+                            <span class="bg-warning">.bg-warning</span>
+                            <span class="bg-info">.bg-info</span>
+                        </div>
+                        <div class="util-colors text-secondary">
+                            <span class="bg-primary-light ">.bg-primary-light</span>
+                            <span class="bg-secondary-light ">.bg-secondary-light</span>
+                            <span class="bg-gray-light ">.bg-gray-light</span>
+                            <span class="bg-success-light ">.bg-success-light</span>
+                            <span class="bg-danger-light ">.bg-danger-light</span>
+                            <span class="bg-warning-light ">.bg-warning-light</span>
+                            <span class="bg-info-light ">.bg-info-light</span>
+                        </div>
+                    </section>
+
+
+                    <!------------------------------------------------------- Typography section ------------------------------------------------------->
+
+                    <section id="typography">
+                        <h1>Typography</h1>
+                        <p>Felix UI uses <code>Montserrat</code>, as its default font, which is a free font available at Google Fonts.</p>
+
+                        <div class="text-doc-container">
+                            <h1>A Visual Type Scale</h1>
+                            <h2>A Visual Type Scale</h2>
+                            <h3>A Visual Type Scale</h3>
+                            <h4>A Visual Type Scale</h4>
+                            <h5>A Visual Type Scale</h5>
+                            <h6>A Visual Type Scale</h6>
+                            <p>A Visual Type Scale</p>
+                            <label>A Visual Type Scale</label>
+                        </div>
+                    </section>
+
+
                     <!------------------------------------------------------- Alert section ------------------------------------------------------->
 
                     <section id="alert">
@@ -492,10 +596,18 @@
 </pre>
                         <h4>Rounded images</h4>
                         <div class="element_container">
-                            <img src="/images/flower.jpg" class="img-fluid round" alt="" />
-                            <img src="/images/sp.jpg" class="img-fluid round" alt="" />
+                            <img src="/images/flower.jpg" class="img-fluid round" alt="flower" />
+                            <img src="/images/sp.jpg" class="img-fluid round" alt="plant" />
                         </div>
+                        <pre>
+    <code class="html">
+<img src="/images/flower.jpg" class="img-fluid round" alt="flower" />
+<img src="/images/sp.jpg" class="img-fluid round" alt="plant" />
+    </code>
+</pre>
                     </section>
+
+
                     <!------------------------------------------------------- Input section ------------------------------------------------------->
 
                     <section id="input">
@@ -592,9 +704,10 @@
     </code>
 </pre>
                     </section>
+                    
                 </div>
                 <footer class="footer">
-                    <span>Made with <i class="fas fa-heart"></i> by Animesh Garai</span>
+                    <span>Made with <i class="fas fa-heart"></i> by <a href="https://portfolio-alpha-liart.vercel.app/" class="text-gray"> Animesh Garai</a></span>
                     <div class="footer__links">
                         <a href="https://github.com/animeshgarai09"><i class="fab fa-github"></i></a>
                         <a href="https://twitter.com/animeshgarai09"><i class="fab fa-twitter"></i></a>
