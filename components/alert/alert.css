@@ -10,25 +10,25 @@
 .alert--success {
   background: var(--green-light);
 }
-.alert--success i {
+.alert--success .alert__icon {
   background: var(--green);
 }
 .alert--error {
   background: var(--red-light);
 }
-.alert--error i {
+.alert--error .alert__icon {
   background: var(--red);
 }
 .alert--warning {
   background: var(--yellow-light);
 }
-.alert--warning i {
+.alert--warning .alert__icon {
   background: var(--yellow);
 }
 .alert--info {
   background: var(--blue-light);
 }
-.alert--info i {
+.alert--info .alert__icon {
   background: var(--blue);
 }
 .alert__text span {
@@ -43,10 +43,14 @@
 .alert__icon {
   display: flex;
   padding: 0 0.5rem;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  margin-left: 0.5rem;
+  border-radius: 50%;
 }
 .alert__icon i {
-  padding: 0.6rem;
-  border-radius: 50%;
   color: #ffffff;
 }
 .alert__close {

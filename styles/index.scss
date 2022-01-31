@@ -9,6 +9,8 @@
         width: 58vw;
         text-align: center;
         margin-top: 5rem;
+        position: relative;
+        z-index: 10;
         h1 {
             margin-bottom: 1.5rem;
             font-size: 3.6rem;
@@ -28,8 +30,12 @@
             margin-bottom: 1.5rem;
         }
     }
-    .home-footer span:first-child {
-        margin-bottom: 1rem;
+    .home-footer {
+        position: relative;
+        z-index: 10;
+        span:first-child {
+            margin-bottom: 1rem;
+        }
     }
     .actions {
         button {
