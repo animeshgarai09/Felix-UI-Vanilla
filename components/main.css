@@ -4,6 +4,30 @@
 @import url("./badge/badge.css");
 @import url("./input/input.css");
 
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-SemiBold.woff2) format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --primary: #3bb77e;
     --primary-light: #def9ec;
@@ -12,7 +36,6 @@
     --black: #2d3748;
     --white: #ffffff;
     --text-color: var(--black);
-    --page-bg: #f7f7f7;
     --green: #20a779;
     --green-light: #c6f6d5;
     --red: #fd4e4e;
@@ -21,6 +44,81 @@
     --yellow-light: #feebc8;
     --blue: #007bc3;
     --blue-light: #bde3f8;
+    --gray-1: #626262;
+    --gray-3: #adadad;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    line-height: 1.75;
+}
+
+h1 {
+    font-size: 2.488125rem;
+}
+
+h2 {
+    font-size: 2.074rem;
+}
+
+h3 {
+    font-size: 1.728125rem;
+}
+
+h4 {
+    font-size: 1.44rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1.0875rem;
+    font-weight: 500;
+}
+
+p {
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+label {
+    position: relative;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+a {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary);
+    font-weight: 500;
+    transition: 0.2s;
+}
+a:hover,
+a:active {
+    color: var(--primary-dark);
+}
+a i {
+    margin-right: 0.3rem;
 }
 
 .img-fluid {
@@ -33,4 +131,70 @@
 }
 .justify-end {
     justify-self: end;
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+.bg-secondary {
+    background-color: var(--black);
+}
+.bg-gray {
+    background-color: var(--gray-1);
+}
+.bg-success {
+    background-color: var(--green);
+}
+.bg-warning {
+    background-color: var(--yellow);
+}
+.bg-danger {
+    background-color: var(--red);
+}
+.bg-info {
+    background-color: var(--blue);
+}
+
+.bg-primary-light {
+    background-color: var(--primary-light);
+}
+.bg-secondary-light {
+    background-color: #9cb7e5;
+}
+.bg-gray-light {
+    background-color: var(--gray-3);
+}
+.bg-success-light {
+    background-color: var(--green-light);
+}
+.bg-warning-light {
+    background-color: var(--yellow-light);
+}
+.bg-danger-light {
+    background-color: var(--red-light);
+}
+.bg-info-light {
+    background-color: var(--blue-light);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+.text-secondary {
+    color: var(--black);
+}
+.text-gray {
+    color: var(--gray-1);
+}
+.text-success {
+    color: var(--green);
+}
+.text-warning {
+    color: var(--yellow);
+}
+.text-danger {
+    color: var(--red);
+}
+.text-info {
+    color: var(--blue);
 }

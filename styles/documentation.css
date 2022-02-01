@@ -3,7 +3,7 @@
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding-left: 1.25rem;
   position: relative;
 }
 .main .side_container {
@@ -88,7 +88,98 @@
 .main section {
   scroll-margin-top: 7rem;
 }
-.main .element_container {
+.main .description {
+  font-weight: 500;
+  text-align: center;
+}
+
+.palette {
+  display: flex;
+  height: 8.75rem;
+}
+.palette > div {
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.palette > div:nth-child(1) {
+  background-color: var(--primary);
+}
+.palette > div:nth-child(2) {
+  background-color: var(--black);
+}
+.palette > div:nth-child(3) {
+  background-color: var(--gray-1);
+}
+.palette > div:nth-child(4) {
+  background-color: var(--green);
+}
+.palette > div:nth-child(5) {
+  background-color: var(--red);
+}
+.palette > div:nth-child(6) {
+  background-color: var(--yellow);
+}
+.palette > div:nth-child(7) {
+  background-color: var(--blue);
+}
+
+.text-doc-container h1,
+.text-doc-container h2,
+.text-doc-container h3,
+.text-doc-container h4,
+.text-doc-container h5,
+.text-doc-container h6,
+.text-doc-container p,
+.text-doc-container label {
+  margin: 0;
+}
+.text-doc-container h1::before,
+.text-doc-container h2::before,
+.text-doc-container h3::before,
+.text-doc-container h4::before,
+.text-doc-container h5::before,
+.text-doc-container h6::before,
+.text-doc-container p::before,
+.text-doc-container label::before {
+  font-size: 0.8rem;
+  color: var(--gray-1);
+  font-weight: 500;
+  width: 4rem;
+  margin-right: 1.5rem;
+  display: inline-block;
+  text-align: right;
+}
+.text-doc-container h1::before {
+  content: "2.48 rem";
+}
+.text-doc-container h2::before {
+  content: "2.07 rem";
+}
+.text-doc-container h3::before {
+  content: "1.72 rem";
+}
+.text-doc-container h4::before {
+  content: "1.44 rem";
+}
+.text-doc-container h5::before {
+  content: "1.2 rem";
+}
+.text-doc-container h6::before {
+  content: "1.08 rem";
+}
+.text-doc-container p::before {
+  content: "1 rem";
+}
+.text-doc-container label::before {
+  content: "0.8 rem";
+}
+
+.element_container {
   border: 1px solid #ededed;
   background: #ffffff;
   border-radius: 10px;
@@ -98,26 +189,81 @@
   margin-bottom: 1rem;
   gap: 0.9375rem;
 }
-.main .element_container .icon-badge {
+.element_container .icon-badge {
   margin-right: 1rem;
 }
-.main .element_container.align_center {
+.element_container.align_center {
   align-items: center;
 }
-.main .element_container.column {
+.element_container.column {
   flex-direction: column;
 }
-.main .element_container.block {
+.element_container.block {
   display: block;
 }
-.main .element_container .round {
+.element_container .round {
   width: 35%;
 }
-.main .form-container {
+
+.form-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 1.25rem;
   align-items: baseline;
+}
+
+.hero-container {
+  background-image: url("/images/new.png");
+  background-size: cover;
+  height: 9rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  position: relative;
+  color: var(--white);
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 1rem 3rem;
+}
+.hero-container .text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.hero-container .text h1 {
+  margin: 0.7rem 0;
+  line-height: 1;
+}
+.hero-container .text p {
+  font-size: 0.9rem;
+  width: 50%;
+  line-height: 1.2;
+}
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  z-index: 0;
+  background: radial-gradient(70.02% 150.4% at 20.67% 24.02%, #3bb77e 0%, #3bb77ed9 55.59%, #ffffff00 100%);
+}
+
+.util-colors {
+  display: flex;
+  color: var(--white);
+}
+.util-colors span {
+  display: inline-block;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: inherit;
+  text-align: center;
+  flex: 1;
 }
 
 /*# sourceMappingURL=documentation.css.map */

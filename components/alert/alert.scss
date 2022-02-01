@@ -1,6 +1,7 @@
 @import "../../utils/functions.scss";
 
 .alert {
+    $p: &;
     max-width: 600px;
     padding: 0.6rem;
     border-radius: 10px;
@@ -10,25 +11,25 @@
     box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 8%) 0px 1px 2px;
     &--success {
         background: var(--green-light);
-        i {
+        #{$p}__icon {
             background: var(--green);
         }
     }
     &--error {
         background: var(--red-light);
-        i {
+        #{$p}__icon {
             background: var(--red);
         }
     }
     &--warning {
         background: var(--yellow-light);
-        i {
+        #{$p}__icon {
             background: var(--yellow);
         }
     }
     &--info {
         background: var(--blue-light);
-        i {
+        #{$p}__icon {
             background: var(--blue);
         }
     }
@@ -46,9 +47,13 @@
     &__icon {
         display: flex;
         padding: 0 0.5rem;
+        width: 2rem;
+        align-items: center;
+        justify-content: center;
+        height: 2rem;
+        margin-left: 0.5rem;
+        border-radius: 50%;
         i {
-            padding: 0.6rem;
-            border-radius: 50%;
             color: #ffffff;
         }
     }
