@@ -1,0 +1,112 @@
+@import "../../utils/functions.scss";
+
+.card {
+    $p: &;
+    display: flex;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    &:hover {
+        border-color: var(--border-color-2);
+        box-shadow: var(--box-shadow-1);
+    }
+
+    &.vertical {
+        flex-direction: column;
+        max-width: 20rem;
+        .image {
+            padding: 1rem 1rem 0 1rem;
+        }
+    }
+    &.horizontal {
+        flex-direction: row;
+    }
+    &__image {
+        background-color: #ffffff;
+        overflow: hidden;
+        margin: auto;
+        min-width: 12rem;
+        max-width: 16rem;
+        max-height: 250px;
+        border-radius: 0 0 1rem 1rem;
+        a {
+            display: block;
+        }
+    }
+    .badge {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        z-index: 1;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 0.75rem 1.25rem 1.25rem 1.25rem;
+        #{$p}__name {
+            color: var(--black);
+            font-weight: 600;
+            margin: 0.4rem 0;
+            &:hover {
+                color: var(--primary);
+            }
+        }
+        p {
+            display: -webkit-box;
+            overflow: hidden;
+            font-size: 0.8rem;
+            -webkit-box-orient: vertical;
+            line-height: 1.3;
+            color: var(--gray-2);
+            -webkit-line-clamp: 3;
+        }
+        #{$p}__category {
+            font-size: rem(12);
+            color: var(--gray-3);
+            &:hover {
+                color: var(--primary);
+            }
+        }
+        #{$p}__vendor {
+            font-size: rem(14);
+            color: var(--gray-3);
+            a {
+                color: var(--primary);
+                &:hover {
+                    color: var(--secondary);
+                }
+            }
+        }
+        .rating {
+            font-size: rem(13);
+            color: var(--gray-3);
+        }
+        #{$p}__bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: rem(10);
+        }
+        #{$p}__price {
+            span {
+                display: block;
+            }
+            & > span {
+                font-size: rem(18);
+                margin-right: 0.6rem;
+                font-weight: 600;
+                color: var(--primary);
+
+                & + span {
+                    text-decoration: line-through;
+                    color: var(--gray-1);
+                    font-size: rem(12);
+                    font-weight: 500;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}

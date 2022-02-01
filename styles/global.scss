@@ -38,9 +38,9 @@ body {
         margin: auto;
         align-items: center;
         padding: 1.25rem 1.25rem;
-        h3 {
-            color: var(--primary);
-        }
+    }
+    &__logo {
+        width: 150px;
     }
     &__links {
         display: flex;

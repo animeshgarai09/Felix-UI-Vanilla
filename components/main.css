@@ -3,6 +3,7 @@
 @import url("./avatar/avatar.css");
 @import url("./badge/badge.css");
 @import url("./input/input.css");
+@import url("./card/card.css");
 
 @font-face {
     font-family: "Montserrat";

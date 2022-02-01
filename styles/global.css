@@ -39,8 +39,8 @@ body {
   align-items: center;
   padding: 1.25rem 1.25rem;
 }
-.header__wrapper h3 {
-  color: var(--primary);
+.header__logo {
+  width: 150px;
 }
 .header__links {
   display: flex;
