@@ -206,6 +206,11 @@
         width: 35%;
     }
 }
+
+.card_container {
+    display: flex;
+    gap: 1.2rem;
+}
 .form-container {
     display: grid;
     grid-template-columns: 1fr 1fr;

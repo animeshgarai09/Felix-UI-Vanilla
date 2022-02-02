@@ -1,0 +1,123 @@
+.card {
+  display: flex;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+}
+.card:hover {
+  border-color: var(--border-color-2);
+  box-shadow: var(--box-shadow-1);
+}
+.card.vertical {
+  flex-direction: column;
+  max-width: 20rem;
+}
+.card.vertical .image {
+  padding: 1rem 1rem 0 1rem;
+}
+.card.horizontal {
+  flex-direction: row;
+}
+.card.text-only .card__image {
+  display: none;
+}
+.card__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  backdrop-filter: blur(1px);
+  align-items: center;
+  background: #e3e3e363;
+  justify-content: center;
+}
+.card__image {
+  background-color: #ffffff;
+  overflow: hidden;
+  margin: auto;
+  min-width: 12rem;
+  max-width: 16rem;
+  max-height: 250px;
+  border-radius: 0 0 1rem 1rem;
+}
+.card__image a {
+  display: block;
+}
+.card .badge {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  z-index: 1;
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1.25rem 1.25rem 1.25rem;
+}
+.card__content .card__name {
+  color: var(--black);
+  font-weight: 600;
+  margin: 0.4rem 0;
+}
+.card__content .card__name:hover {
+  color: var(--primary);
+}
+.card__content p {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 0.8rem;
+  -webkit-box-orient: vertical;
+  line-height: 1.3;
+  color: var(--gray-2);
+  -webkit-line-clamp: 3;
+}
+.card__content .card__category {
+  font-size: 0.75rem;
+  color: var(--gray-3);
+}
+.card__content .card__category:hover {
+  color: var(--primary);
+}
+.card__content .card__vendor {
+  font-size: 0.875rem;
+  color: var(--gray-3);
+}
+.card__content .card__vendor a {
+  color: var(--primary);
+}
+.card__content .card__vendor a:hover {
+  color: var(--secondary);
+}
+.card__content .rating {
+  font-size: 0.8125rem;
+  color: var(--gray-3);
+}
+.card__content .card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.625rem;
+}
+.card__content .card__price span {
+  display: block;
+}
+.card__content .card__price > span {
+  font-size: 1.125rem;
+  margin-right: 0.6rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+.card__content .card__price > span + span {
+  text-decoration: line-through;
+  color: var(--gray-1);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/*# sourceMappingURL=card.css.map */
