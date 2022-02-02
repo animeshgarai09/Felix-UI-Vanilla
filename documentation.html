@@ -549,7 +549,7 @@
                             <button class="btn btn--primary">Primary</button>
                             <button class="btn btn--info">Info</button>
                             <button class="btn btn--success">Success</button>
-                            <button class="btn btn--warning">Primary</button>
+                            <button class="btn btn--warning">Warning</button>
                             <button class="btn btn--danger">Danger</button>
                             <!-- <button class="btn btn--primary">Primary</button> -->
                         </div>
@@ -587,8 +587,10 @@
                         <h1>Card</h1>
                         <p>Card are used to show user related data collectively, like product details.</p>
                         <h4>Product card</h4>
-                        <p>Product card comes with Few variations. <code>Vertical</code>, <code>Horizontal</code> and <code>Text</code> variant for different use case</p>
+                        <p>Product card comes with Few variations. <code>Vertical</code>, <code>Horizontal</code> and <code>Text</code> variant for different use case.</p>
                         <h4>Vertical card</h4>
+                        <p>To the product card vertical just add <code>.vertical</code> class to parent element.</p>
+
                         <div class=" card_container">
                             <div class="card vertical">
                                 <div class="card__image">
@@ -680,6 +682,7 @@
     </code>
 </pre>
                     <h4>Horizontal card</h4>
+                    <p>To the product card horizontal just add <code>.horizontal</code> class to parent element.</p>
                     <div class=" card_container">
                         <div class="card horizontal">
                             <div class="card__image">
@@ -749,7 +752,173 @@
 </div>
     </code>
 </pre>
-                    </section>
+                    <h4>Text only card</h4>
+                    <p>To show only the text details of a product just add <code>.text-only</code> class in parent element to hide product images.</p>
+                    <div class=" card_container">
+                        <div class="card horizontal text-only">
+                            <div class="card__image">
+                                <badge class="badge badge--red">Sale</badge>
+                                <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
+                            </div>
+                            <div class="card__content">
+                                <a class="card__category" href="#">Food</a>
+                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                <span class="card__vendor">By <a href="">Nestle</a></span>
+                                <div class="card__bottom">
+                                    <div class="card__price">
+                                        <span>Rs. 250</span>
+                                        <span>Rs. 339</span>
+                                    </div>
+                                    <div class="card__button_con">
+                                        <button class="btn btn--md btn--primary btn--ghost">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card horizontal text-only">
+                            <div class="card__image">
+                                <badge class="badge badge--red">Sale</badge>
+                                <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
+                            </div>
+                            <div class="card__content">
+                                <a class="card__category" href="#">Food</a>
+                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                <span class="card__vendor">By <a href="">Nestle</a></span>
+                                <div class="card__bottom">
+                                    <div class="card__price">
+                                        <span>Rs. 250</span>
+                                        <span>Rs. 339</span>
+                                    </div>
+                                    <div class="card__button_con">
+                                        <button class="btn btn--md btn--primary btn--ghost">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <pre>
+    <code class="html">
+<div class="card horizontal text-only">
+    <div class="card__image">
+        <badge class="badge badge--red">Sale</badge>
+        <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
+    </div>
+    <div class="card__content">
+        <a class="card__category" href="#">Food</a>
+        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+        <span class="card__vendor">By <a href="">Nestle</a></span>
+        <div class="card__bottom">
+            <div class="card__price">
+                <span>Rs. 250</span>
+                <span>Rs. 339</span>
+            </div>
+            <div class="card__button_con">
+                <button class="btn btn--md btn--primary btn--ghost">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </code>
+</pre>    
+                <h4>Card with overlay</h4>
+                <p>To show an overlay on a product just add a <code>div</code> element with<code> .card__overlay</code> class with desired text.</p>
+                <div class=" card_container">
+                            <div class="card vertical">
+                                <div class="card__image">
+                                    <badge class="badge badge--red">Sale</badge>
+                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__category" href="#">Food</a>
+                                    <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt. Facere laboriosam accusantium corrupti, repellendus ratione inventore architecto expedita aliquam!</p>
+                                    <span class="card__vendor">By <a href="">Nestle</a></span>
+                                    <div class="card__bottom">
+                                        <div class="card__price">
+                                            <span>Rs. 250</span>
+                                            <span>Rs. 339</span>
+                                        </div>
+                                        <div class="card__button_con">
+                                            <button class="btn btn--md btn--primary btn--ghost">Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card vertical">
+                                <div class="card__overlay">Out of stock</div>
+                                <div class="card__image">
+                                    <badge class="badge badge--red">Sale</badge>
+                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__category" href="#">Food</a>
+                                    <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt. Facere laboriosam accusantium corrupti, repellendus ratione inventore architecto expedita aliquam!</p>
+                                    <span class="card__vendor">By <a href="">Nestle</a></span>
+                                    <div class="card__bottom">
+                                        <div class="card__price">
+                                            <span>Rs. 250</span>
+                                            <span>Rs. 339</span>
+                                        </div>
+                                        <div class="card__button_con">
+                                            <button class="btn btn--md btn--primary btn--ghost">Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card vertical">
+                                <div class="card__image">
+                                    <badge class="badge badge--red">Sale</badge>
+                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__category" href="#">Food</a>
+                                    <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt. Facere laboriosam accusantium corrupti, repellendus ratione inventore architecto expedita aliquam!</p>
+                                    <span class="card__vendor">By <a href="">Nestle</a></span>
+                                    <div class="card__bottom">
+                                        <div class="card__price">
+                                            <span>Rs. 250</span>
+                                            <span>Rs. 339</span>
+                                        </div>
+                                        <div class="card__button_con">
+                                            <button class="btn btn--md btn--primary btn--ghost">Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+    <code class="html">
+<div class="card horizontal text-only">
+    <!-- Add overlay element here -->
+    <div class="card__overlay">Out of stock</div>
+    <div class="card__image">
+        <badge class="badge badge--red">Sale</badge>
+        <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
+    </div>
+    <div class="card__content">
+        <a class="card__category" href="#">Food</a>
+        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+        <span class="card__vendor">By <a href="">Nestle</a></span>
+        <div class="card__bottom">
+            <div class="card__price">
+                <span>Rs. 250</span>
+                <span>Rs. 339</span>
+            </div>
+            <div class="card__button_con">
+                <button class="btn btn--md btn--primary btn--ghost">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </code>
+</pre>    
+                </section>
 
                     <!------------------------------------------------------- Image section ------------------------------------------------------->
                     <section id="image">

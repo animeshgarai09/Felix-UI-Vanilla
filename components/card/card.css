@@ -20,6 +20,22 @@
 .card.horizontal {
   flex-direction: row;
 }
+.card.text-only .card__image {
+  display: none;
+}
+.card__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  backdrop-filter: blur(1px);
+  align-items: center;
+  background: #e3e3e363;
+  justify-content: center;
+}
 .card__image {
   background-color: #ffffff;
   overflow: hidden;
