@@ -41,7 +41,7 @@
     }
 }
 .icon-badge {
-    font-size: 1.8rem;
+    font-size: 1.7em;
     height: 1.4em;
     width: 1.4em;
     border-radius: 50%;
@@ -53,12 +53,12 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        border-radius: 10px;
+        border-radius: rem(10);
         color: #ffffff;
         font-weight: 600;
         height: 1rem;
         min-width: 1rem;
-        font-size: 0.62rem;
+        font-size: 0.4em;
         // background: var(--primary);
         position: absolute;
         top: 2px;
