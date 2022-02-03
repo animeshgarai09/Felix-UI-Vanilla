@@ -51,7 +51,7 @@
 .icon-badge .badge {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  line-height: 0;
   border-radius: 0.625rem;
   color: #ffffff;
   font-weight: 600;
@@ -61,7 +61,7 @@
   position: absolute;
   top: 2px;
   left: 1.22rem;
-  border: 2px solid var(--page-bg);
+  border: 2px solid var(--white);
 }
 .icon-badge .badge--green {
   background: var(--green);
