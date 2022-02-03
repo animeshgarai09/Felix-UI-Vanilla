@@ -27,6 +27,7 @@
     --border-color: #ececec;
     --border-color-2: #bce3c9;
     --box-shadow-1: 5px 5px 15px rgb(0 0 0 / 5%);
+    --transition: all 0.3s ease 0s;
 }
 
 * {
@@ -101,7 +102,20 @@ a:active {
 a i {
     margin-right: 0.3rem;
 }
-
+a,
+button,
+img {
+    transition: var(--transition);
+}
+input {
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+input:focus {
+    outline: none;
+}
 .img-fluid {
     max-inline-size: 100%;
     block-size: auto;
