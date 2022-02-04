@@ -185,7 +185,7 @@
 }
 
 .element_container {
-  border: 1px solid #ededed;
+  border: 1px solid var(--border-color-3);
   background: #ffffff;
   border-radius: 10px;
   display: flex;
