@@ -126,5 +126,10 @@
                 }
             }
         }
+        #{$p}__button_con {
+            button:first-child i {
+                margin: 0;
+            }
+        }
     }
 }

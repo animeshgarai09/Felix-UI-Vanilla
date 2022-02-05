@@ -23,11 +23,18 @@
 }
 :root {
     --page-bg: #f7f7f7;
+    --header-bg: var(--white);
     --label-white: #707070;
     --input-bg: #e5e5e563;
     --error: #f66969;
+    --element-container-bg: var(--white);
 }
-
+.dark-theme {
+    --page-bg: #222222;
+    --page-dark-bg: #1e1e1e;
+    --header-bg: var(--page-dark-bg);
+    --element-container-bg: var(--page-dark-bg);
+}
 html,
 body {
     padding: 0;
@@ -43,7 +50,7 @@ body {
 .header {
     border-bottom: 1px solid var(--border-color-3);
     position: sticky;
-    background: var(--white);
+    background: var(--header-bg);
     top: 0;
     z-index: 10;
     &__wrapper {

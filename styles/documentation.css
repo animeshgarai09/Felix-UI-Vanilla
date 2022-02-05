@@ -14,7 +14,7 @@
   flex-direction: column;
   height: calc(100vh - 82px - 2rem);
   overflow-y: auto;
-  border-right: 2px solid #e7e7e7;
+  border-right: 2px solid var(--border-color-3);
 }
 .main .side_container h6 {
   margin-bottom: 1.2rem;
@@ -186,7 +186,7 @@
 
 .element_container {
   border: 1px solid var(--border-color-3);
-  background: #ffffff;
+  background: var(--element-container-bg);
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
