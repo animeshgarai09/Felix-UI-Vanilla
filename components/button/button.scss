@@ -42,6 +42,9 @@
             font-size: 1.6rem;
         }
     }
+    &--full {
+        width: 100%;
+    }
     &--primary {
         background-color: var(--primary);
         color: var(--white);

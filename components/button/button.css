@@ -42,6 +42,9 @@
 .btn--lg svg {
   font-size: 1.6rem;
 }
+.btn--full {
+  width: 100%;
+}
 .btn--primary {
   background-color: var(--primary);
   color: var(--white);
