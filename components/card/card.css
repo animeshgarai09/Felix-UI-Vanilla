@@ -22,6 +22,24 @@
 .card.text-only .card__image {
   display: none;
 }
+.card__remove {
+  position: absolute;
+  display: inline-flex;
+  height: 2rem;
+  width: 2rem;
+  justify-content: center;
+  align-items: center;
+  right: 0.9375rem;
+  color: #bbbbbb;
+  top: 0.9375rem;
+  background: #edeeef;
+  border-radius: 50%;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.card__remove:hover {
+  color: var(--gray-1);
+}
 .card__overlay {
   position: absolute;
   width: 100%;

@@ -28,6 +28,24 @@
             display: none;
         }
     }
+    &__remove {
+        position: absolute;
+        display: inline-flex;
+        height: 2rem;
+        width: 2rem;
+        justify-content: center;
+        align-items: center;
+        right: rem(15);
+        color: #bbbbbb;
+        top: rem(15);
+        background: #edeeef;
+        border-radius: 50%;
+        transition: var(--transition);
+        cursor: pointer;
+        &:hover {
+            color: var(--gray-1);
+        }
+    }
     &__overlay {
         position: absolute;
         width: 100%;
