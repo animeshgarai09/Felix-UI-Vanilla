@@ -206,7 +206,15 @@ input:focus {
 .text-info {
     color: var(--blue);
 }
-
 .text-center {
     text-align: center;
+}
+.text-w-400 {
+    font-weight: 400;
+}
+.text-w-500 {
+    font-weight: 500;
+}
+.text-w-600 {
+    font-weight: 600;
 }
