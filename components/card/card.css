@@ -58,8 +58,8 @@
   overflow: hidden;
   margin: auto;
   min-width: 12rem;
-  max-width: 16rem;
-  max-height: 250px;
+  max-width: 14rem;
+  max-height: 13.75rem;
   border-radius: 0 0 1rem 1rem;
 }
 .card__image a {
