@@ -71,22 +71,49 @@
 .btn--round {
   border-radius: 5rem;
 }
-.btn--outline {
+.btn--outline.btn--primary {
   background: var(--primary-light);
   color: var(--primary);
   border: 2px solid var(--primary);
 }
-.btn--outline:hover {
+.btn--outline.btn--primary:hover {
   background: var(--primary);
   color: var(--white);
 }
-.btn--ghost {
+.btn--outline.btn--info {
+  background: var(--blue-light);
+  color: var(--blue);
+  border: 2px solid var(--blue);
+}
+.btn--outline.btn--info:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+.btn--outline.btn--danger {
+  background: var(--red-light);
+  color: var(--red);
+  border: 2px solid var(--red);
+}
+.btn--outline.btn--danger:hover {
+  background: var(--red);
+  color: var(--white);
+}
+.btn--ghost.btn--primary {
   background: var(--primary-light);
   border: none;
   color: var(--primary);
 }
-.btn--ghost:hover {
+.btn--ghost.btn--primary:hover {
   background: var(--primary);
+  color: var(--white);
+}
+.btn--ghost.btn--danger {
+  background: var(--red-light);
+  border: none;
+  color: var(--red);
+}
+.btn--ghost.btn--danger:hover {
+  background: var(--red);
   color: var(--white);
 }
 .btn--link {
