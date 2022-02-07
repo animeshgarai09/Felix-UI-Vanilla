@@ -218,3 +218,7 @@ input:focus {
 .text-w-600 {
     font-weight: 600;
 }
+
+.transform-none {
+    transform: none;
+}
