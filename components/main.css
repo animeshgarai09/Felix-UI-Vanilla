@@ -135,7 +135,7 @@ input:focus {
     height: auto;
 }
 .round {
-    border-radius: 50%;
+    clip-path: circle();
 }
 .justify-end {
     justify-self: end;
@@ -217,8 +217,4 @@ input:focus {
 }
 .text-w-600 {
     font-weight: 600;
-}
-
-.transform-none {
-    transform: none;
 }

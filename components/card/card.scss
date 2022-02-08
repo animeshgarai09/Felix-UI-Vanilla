@@ -64,8 +64,8 @@
         overflow: hidden;
         margin: auto;
         min-width: 12rem;
-        max-width: 14rem;
-        max-height: rem(220);
+        max-width: 13rem;
+        max-height: rem(200);
         border-radius: 0 0 1rem 1rem;
         a {
             display: block;
@@ -85,6 +85,7 @@
             color: var(--black);
             font-weight: 600;
             margin: 0.4rem 0;
+            font-size: 0.9rem;
             &:hover {
                 color: var(--primary);
             }
@@ -96,7 +97,7 @@
             -webkit-box-orient: vertical;
             line-height: 1.3;
             color: var(--gray-2);
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 2;
         }
         #{$p}__category {
             font-size: rem(12);

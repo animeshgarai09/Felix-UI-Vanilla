@@ -1,4 +1,18 @@
 @import "../../utils/functions.scss";
+
+@mixin base($color, $v: 0) {
+    background: var(--#{$color}-light);
+    @if $v != 0 {
+        border: none;
+    } @else {
+        border: 2px solid var(--#{$color});
+    }
+    color: var(--#{$color});
+    &:hover {
+        background: var(--#{$color});
+        color: var(--white);
+    }
+}
 .btn {
     $p: &;
     border: 0;
@@ -19,6 +33,11 @@
     &:hover {
         transform: translateY(-3px);
         box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
+    }
+    &--no-transform {
+        &:hover {
+            transform: none;
+        }
     }
     &--xs {
         font-size: rem(11);
@@ -76,51 +95,36 @@
     }
     &--outline {
         &#{$p}--primary {
-            background: var(--primary-light);
-            color: var(--primary);
-            border: 2px solid var(--primary);
-            &:hover {
-                background: var(--primary);
-                color: var(--white);
-            }
+            @include base(primary);
+        }
+        &#{$p}--success {
+            @include base(green);
         }
         &#{$p}--info {
-            background: var(--blue-light);
-            color: var(--blue);
-            border: 2px solid var(--blue);
-            &:hover {
-                background: var(--blue);
-                color: var(--white);
-            }
+            @include base(blue);
         }
         &#{$p}--danger {
-            background: var(--red-light);
-            color: var(--red);
-            border: 2px solid var(--red);
-            &:hover {
-                background: var(--red);
-                color: var(--white);
-            }
+            @include base(red);
+        }
+        &#{$p}--warning {
+            @include base(yellow);
         }
     }
     &--ghost {
         &#{$p}--primary {
-            background: var(--primary-light);
-            border: none;
-            color: var(--primary);
-            &:hover {
-                background: var(--primary);
-                color: var(--white);
-            }
+            @include base(primary, 1);
+        }
+        &#{$p}--success {
+            @include base(green, 1);
+        }
+        &#{$p}--info {
+            @include base(blue, 1);
         }
         &#{$p}--danger {
-            background: var(--red-light);
-            border: none;
-            color: var(--red);
-            &:hover {
-                background: var(--red);
-                color: var(--white);
-            }
+            @include base(red, 1);
+        }
+        &#{$p}--warning {
+            @include base(yellow, 1);
         }
     }
     &--link {
