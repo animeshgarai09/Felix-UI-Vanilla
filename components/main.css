@@ -4,6 +4,7 @@
 @import url("./badge/badge.css");
 @import url("./input/input.css");
 @import url("./card/card.css");
+@import url("./modal/modal.css");
 
 :root {
     --primary: #3bb77e;
@@ -117,9 +118,35 @@ img {
 }
 ol,
 ul {
+    line-height: 1.7;
+    padding-left: 1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.list-style-none {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
+.list-style-disc {
+    list-style: disc;
+}
+.list-style-square {
+    list-style: square;
+}
+.list-style-circle {
+    list-style: circle;
+}
+.list-style-number {
+    list-style: decimal;
+}
+.list-style-lowerLetter {
+    list-style: lower-alpha;
+}
+.list-style-upperLetter {
+    list-style: upper-alpha;
+}
+
 input {
     background-image: none;
     -webkit-box-shadow: none;
@@ -217,4 +244,32 @@ input:focus {
 }
 .text-w-600 {
     font-weight: 600;
+}
+
+.grid {
+    display: grid;
+    gap: 1.2rem;
+}
+.col-2-even {
+    grid-template-columns: 1fr 1fr;
+}
+.col-2-right-expand {
+    grid-template-columns: 3fr 7fr;
+}
+.col-2-left-expand {
+    grid-template-columns: 7fr 3fr;
+}
+
+.col-3-even {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.col-3-right-expand {
+    grid-template-columns: 3fr 3fr 4fr;
+}
+.col-3-mid-expand {
+    grid-template-columns: 3fr 4fr 3fr;
+}
+.col-3-left-expand {
+    grid-template-columns: 4fr 3fr 3fr;
 }

@@ -68,11 +68,6 @@
   font-size: 14px;
   color: #8d66d6;
 }
-.main ul {
-  padding-left: 1.2rem;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-}
 .main code,
 .main code span {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
@@ -210,11 +205,6 @@
   width: 35%;
 }
 
-.card_container {
-  display: flex;
-  gap: 1.2rem;
-}
-
 .form-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -274,6 +264,19 @@
   color: inherit;
   text-align: center;
   flex: 1;
+}
+
+#list .element_container {
+  padding-inline: 2rem;
+  justify-content: space-between;
+}
+
+.list-style-none p {
+  margin-bottom: 0;
+}
+.list-style-none span {
+  font-size: 0.8rem;
+  color: var(--gray-3);
 }
 
 /*# sourceMappingURL=documentation.css.map */
