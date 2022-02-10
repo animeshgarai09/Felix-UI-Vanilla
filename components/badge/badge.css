@@ -53,7 +53,7 @@
   align-items: center;
   line-height: 0;
   border-radius: 0.625rem;
-  color: #ffffff;
+  color: var(--white);
   font-weight: 600;
   height: 1rem;
   min-width: 1rem;

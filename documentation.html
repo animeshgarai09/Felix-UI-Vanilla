@@ -35,13 +35,13 @@
                 <a href="#badge" class="link">Badge</a>
                 <a href="#button" class="link">Button</a>
                 <a href="#card" class="link">Card</a>
-                <!-- <a href="" class="link">Grid</a> -->
+                <a href="#grid" class="link">Grid</a>
                 <a href="#image" class="link">Image</a>
                 <a href="#input" class="link">Input</a>
-                <!-- <a href="" class="link">List</a>
-                <a href="" class="link">Modal</a>
-                <a href="" class="link">Navigation</a>
-                <a href="" class="link">Toggle Button</a> -->
+                <a href="#list" class="link">List</a>
+                <a href="#modal" class="link">Modal</a>
+                <!-- <a href="#navigation" class="link">Navigation</a> -->
+                <!-- <a href="" class="link">Toggle Button</a> -->
             </aside>
             <div class="container">
                 <div class="sub_container">
@@ -592,7 +592,7 @@
                         <h4>Vertical card</h4>
                         <p>To the product card vertical just add <code>.vertical</code> class to parent element.</p>
 
-                        <div class=" card_container">
+                        <div class="grid col-3-even">
                             <div class="card vertical">
                                 <div class="card__image">
                                     <badge class="badge badge--red">Sale</badge>
@@ -688,7 +688,7 @@
 </pre>
                     <h4>Horizontal card</h4>
                     <p>To the product card horizontal just add <code>.horizontal</code> class to parent element.</p>
-                    <div class=" card_container">
+                    <div class="grid col-2-even">
                         <div class="card horizontal">
                             <div class="card__image">
                                 <badge class="badge badge--red">Sale</badge>
@@ -762,7 +762,7 @@
 </pre>
                     <h4>Text only card</h4>
                     <p>To show only the text details of a product just add <code>.text-only</code> class in parent element to hide product images.</p>
-                    <div class=" card_container">
+                    <div class="grid col-2-even">
                         <div class="card horizontal text-only">
                             <div class="card__image">
                                 <badge class="badge badge--red">Sale</badge>
@@ -836,7 +836,7 @@
 </pre>    
                 <h4>Card with overlay</h4>
                 <p>To show an overlay on a product just add a <code>div</code> element with<code> .card__overlay</code> class with desired text.</p>
-                <div class=" card_container">
+                <div class="grid col-3-even">
                             <div class="card vertical">
                                 <div class="card__image">
                                     <badge class="badge badge--red">Sale</badge>
@@ -961,7 +961,418 @@
     </code>
 </pre>    
                 </section>
-
+                    <!------------------------------------------------------- Grid section ------------------------------------------------------->
+                    <section id="grid">
+                        <h1>Grid</h1>
+                        <p>Use grid when you want to divide screen width into column. Check below some examples of side by side cards.</p>
+                        <h4>Two column grid</h4>
+                        <p>To create a two colum grid add <code>.grid</code> class to parent container div and arrange it according to your need with below utility classes.</p>
+                        <ul >
+                            <li><code>col-2-even</code> : To evenly divide a row into 2 columns.</li>
+                            <li><code>col-2-right-expand</code> : To divide a row into 2 columns where right column is stretched.</li>
+                            <li><code>col-2-left-expand</code> : To divide a row into 2 columns where left column is stretched.</li>
+                        </ul>
+                        <div class="element_container ">
+                            <div class="grid col-2-right-expand">
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid col-2-even">
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid col-2-left-expand">
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+<code class="html">
+<!-- grid row divided in two column where right column is stretched -->
+<div class="grid col-2-right-expand">
+    <div class="card">
+        {...}
+    </div>
+</div>
+<!-- grid row divided in two even column -->
+<div class="grid col-2-even">
+    <div class="card">
+        {...}
+    </div>
+</div>
+<!-- grid row divided in two column where left column is stretched -->
+<div class="grid col-2-left-expand">
+    <div class="card">
+        {...}
+    </div>
+</div>
+    </code>
+</pre>
+                        <h4>Three column grid</h4>
+                        <p>To create a three colum grid add <code>.grid</code> class to parent container div and arrange it according to your need with below utility classes.</p>
+                        <ul>
+                            <li><code>col-3-even</code> : To evenly divide a row into 3 columns.</li>
+                            <li><code>col-3-right-expand</code> : To divide a row into 3 columns where right column is stretched.</li>
+                            <li><code>col-3-mid-expand</code> : To divide a row into 3 columns where middle column is stretched.</li>
+                            <li><code>col-3-left-expand</code> : To divide a row into 3 columns where left column is stretched.</li>
+                        </ul>
+                        <div class="element_container">
+                            <div class="grid col-3-even">
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid col-3-left-expand">
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid col-3-mid-expand">
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid col-3-right-expand">
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card horizontal text-only">
+                                    <div class="card__content">
+                                        <a class="card__category" href="#">Food</a>
+                                        <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                        <span class="card__vendor">By <a href="">Nestle</a></span>
+                                        <div class="card__bottom">
+                                            <div class="card__price">
+                                                <span>Rs. 250</span>
+                                                <span>Rs. 339</span>
+                                            </div>
+                                            <div class="card__button_con">
+                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+<code class="html">
+<!-- grid row divided in three even columns -->
+<div class="grid col-3-left-expand">
+    <div class="card">
+        {...}
+    </div>
+</div>
+<!-- grid row divided in three columns where right column is stretched -->
+<div class="grid col-3-right-expand">
+    <div class="card">
+        {...}
+    </div>
+</div>
+<!-- grid row divided in three columns where middle column is stretched -->
+<div class="grid col-2-even">
+    <div class="card">
+        {...}
+    </div>
+</div>
+<!-- grid row divided in three columns where left column is stretched -->
+<div class="grid col-3-left-expand">
+    <div class="card">
+        {...}
+    </div>
+</div>
+    </code>
+</pre>
+                    </section>
                     <!------------------------------------------------------- Image section ------------------------------------------------------->
                     <section id="image">
                         <h1>Images</h1>
@@ -1085,7 +1496,205 @@
     </code>
 </pre>
                     </section>
-                    
+                    <!------------------------------------------------------- List section ------------------------------------------------------->
+                    <section id="list">
+                        <h1>List</h1>
+                        <p>Lists can be used at so many places, navigation bar, stacked notifications, article pages, etc.</p>
+                        <ul>
+                            <li><code>list-style-disc</code> : To add disc style for <code>ul</code> list items.</li>
+                            <li><code>list-style-square</code> : To add square style for <code>ul</code> list items.</li>
+                            <li><code>list-style-circle</code> : To add circle style for <code>ul</code> list item.</li>
+                            <li><code>list-style-number</code> : To add number style for <code>ol</code> list item.</li>
+                            <li><code>list-style-lowerLetter</code> : To add lower case letter style for <code>ol</code> list item.</li>
+                            <li><code>list-style-upperLetter</code> : To add Upper case letter style for <code>ol</code> list item.</li>
+                        </ul>
+                        <div class="element_container ">
+                            <ul class="list-style-disc"> 
+                                <li>list item1</li>
+                                <li>list item2</li>
+                                <li>list item3</li>
+                            </ul>
+                            <ul class="list-style-square"> 
+                                <li>list item1</li>
+                                <li>list item2</li>
+                                <li>list item3</li>
+                            </ul>
+                            <ul class="list-style-circle"> 
+                                <li>list item1</li>
+                                <li>list item2</li>
+                                <li>list item3</li>
+                            </ul>
+                            <ol class="list-style-number"> 
+                                <li>list item1</li>
+                                <li>list item2</li>
+                                <li>list item3</li>
+                            </ol>
+                            <ol class="list-style-lowerLetter"> 
+                                <li>list item1</li>
+                                <li>list item2</li>
+                                <li>list item3</li>
+                            </ol>
+                            <ol class="list-style-upperLetter"> 
+                                <li>list item1</li>
+                                <li>list item2</li>
+                                <li>list item3</li>
+                            </ol>
+                        </div>
+<pre>
+    <code class="html">
+<ul class="list-style-disc"> 
+    {list items...}
+</ul>
+<ul class="list-style-square"> 
+    {list items...}
+</ul>
+<ul class="list-style-circle"> 
+    {list items...}
+</ul>
+<ol class="list-style-number"> 
+    {list items...}
+</ol>
+<ol class="list-style-lowerLetter"> 
+    {list items...}
+</ol>
+<ol class="list-style-upperLetter"> 
+    {list items...}
+</ol>
+    </code>
+</pre>
+                        <h4>Stacked list for notification</h4>
+                        <p>To strip away any list styling, add <code>list-style-none</code> class to stack items without any default list styles.</p>
+                        <div class="element_container ">
+                             <ul class="list-style-none"> 
+                                <li>
+                                    <p class="text-w-500">user added</p>
+                                    <span>@new-user just folowed you</span>
+                                </li>
+                                <li>
+                                    <p class="text-w-500">user added</p>
+                                    <span>@new-user just folowed you</span>
+                                </li>
+                                <li>
+                                    <p class="text-w-500">user added</p>
+                                    <span>@new-user just folowed you</span>
+                                </li>
+                                <li>
+                                    <p class="text-w-500">user added</p>
+                                    <span>@new-user just folowed you</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <pre>
+    <code class="html">
+<ul class="list-style-none"> 
+    <li>
+        <p class="text-w-500">user added</p>
+        <span>@new-user just folowed you</span>
+    </li>
+    <li>
+        <p class="text-w-500">user added</p>
+        <span>@new-user just folowed you</span>
+    </li>
+    <li>
+        <p class="text-w-500">user added</p>
+        <span>@new-user just folowed you</span>
+    </li>
+    <li>
+        <p class="text-w-500">user added</p>
+        <span>@new-user just folowed you</span>
+    </li>
+</ul>
+    </code>
+</pre>
+                    </section>
+
+                    <!------------------------------------------------------- Modal section ------------------------------------------------------->
+
+                    <section id="modal">
+                        <h1>Modals</h1>
+                        <p>Modals are positioned over everything else in the document and remove scroll from the page. It gets closed only with close button on modal pop-up.</p>
+                        <h4>Live demo</h4>
+                        <p>Click on the below CTA to open modal. Once the modal is open user will not be able to scroll or do any action on the main page. To close the pop-up, click on close icon or Back button. Functionality is achieved using JavaScript</p>
+                        <div class="element_container ">
+                            <button id="myBtn" class="btn btn--primary">Open demo modal</button>
+                        </div>
+                        <div id="myModal" class="modal modal--md" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal__content">
+                                <div class="modal__header">
+                                    <h3 class="modal__title" id="exampleModalLongTitle">Modal title</h3>
+                                    <button type="button" class="btn btn--sm close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal__body text-center">
+                                    <h1>This is a demo modal</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam natus sint dicta sed id voluptate atque, sequi error aliquid consequatur facere adipisci a quidem similique ex doloribus reprehenderit ratione cumque? </p>
+                                </div>
+                                <div class="modal__footer">
+                                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn--primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+    <code class="html">
+<div id="myModal" class="modal modal--md" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal__content">
+        <div class="modal__header">
+            <h3 class="modal__title" id="exampleModalLongTitle">Modal title</h3>
+            <button type="button" class="btn btn--sm close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal__body text-center">
+            <h1>This is a demo modal</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam natus sint dicta
+                 sed id voluptate atque, sequi error aliquid consequatur facere adipisci a quidem 
+                 similique ex doloribus reprehenderit ratione cumque? </p>
+        </div>
+        <div class="modal__footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn--primary">Save changes</button>
+        </div>
+    </div>
+</div>
+    </code>
+</pre>
+                            <h4>Javascript</h4>
+<pre>
+    <code class="javascript">
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the span element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden";
+}
+
+// When the user clicks on span (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+    document.body.style.overflow = "visible";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "visible";
+    }
+}
+    </code>
+</pre>
+            
+                    </section>
                 </div>
                 <footer class="footer">
                     <span>Made with <i class="fas fa-heart"></i> by <a href="https://portfolio-alpha-liart.vercel.app/" class="text-gray"> Animesh Garai</a></span>
@@ -1103,6 +1712,8 @@
 
         <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
         <script>
+            hljs.highlightAll()
+
             const sections = document.querySelectorAll("section")
             const link = document.querySelectorAll(".link")
             window.onscroll = () => {
@@ -1125,7 +1736,35 @@
             document.querySelectorAll("code").forEach((element) => {
                 element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;")
             })
-            hljs.highlightAll()
+
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+                document.body.style.overflow = "hidden";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+                document.body.style.overflow = "visible";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                    document.body.style.overflow = "visible";
+                }
+            }
         </script>
     </body>
 </html>
