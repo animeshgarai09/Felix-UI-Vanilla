@@ -15,7 +15,6 @@
 
     &.vertical {
         flex-direction: column;
-        max-width: 20rem;
         .image {
             padding: 1rem 1rem 0 1rem;
         }
@@ -27,6 +26,24 @@
     &.text-only {
         #{$p}__image {
             display: none;
+        }
+    }
+    &__remove {
+        position: absolute;
+        display: inline-flex;
+        height: 2rem;
+        width: 2rem;
+        justify-content: center;
+        align-items: center;
+        right: rem(15);
+        color: #bbbbbb;
+        top: rem(15);
+        background: #edeeef;
+        border-radius: 50%;
+        transition: var(--transition);
+        cursor: pointer;
+        &:hover {
+            color: var(--gray-1);
         }
     }
     &__overlay {
@@ -47,8 +64,8 @@
         overflow: hidden;
         margin: auto;
         min-width: 12rem;
-        max-width: 16rem;
-        max-height: 250px;
+        max-width: 13rem;
+        max-height: rem(200);
         border-radius: 0 0 1rem 1rem;
         a {
             display: block;
@@ -68,6 +85,7 @@
             color: var(--black);
             font-weight: 600;
             margin: 0.4rem 0;
+            font-size: 0.9rem;
             &:hover {
                 color: var(--primary);
             }
@@ -79,7 +97,7 @@
             -webkit-box-orient: vertical;
             line-height: 1.3;
             color: var(--gray-2);
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 2;
         }
         #{$p}__category {
             font-size: rem(12);
@@ -125,6 +143,11 @@
                     font-weight: 500;
                     line-height: 1;
                 }
+            }
+        }
+        #{$p}__button_con {
+            button:first-child i {
+                margin: 0;
             }
         }
     }

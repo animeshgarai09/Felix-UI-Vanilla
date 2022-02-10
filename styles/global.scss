@@ -1,17 +1,40 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-SemiBold.woff2) format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
 :root {
     --page-bg: #f7f7f7;
-    --gray-1: #626262;
-    --gray-2: #7c7c7c;
-    --gray-3: #adadad;
-    --border-color: #ececec;
-    --border-color-2: #bce3c9;
-    --box-shadow-1: 5px 5px 15px rgb(0 0 0 / 5%);
-
+    --header-bg: var(--white);
     --label-white: #707070;
     --input-bg: #e5e5e563;
     --error: #f66969;
+    --element-container-bg: var(--white);
 }
-
+.dark-theme {
+    --page-bg: #222222;
+    --page-dark-bg: #1e1e1e;
+    --header-bg: var(--page-dark-bg);
+    --element-container-bg: var(--page-dark-bg);
+}
 html,
 body {
     padding: 0;
@@ -25,9 +48,9 @@ body {
 }
 
 .header {
-    border-bottom: 1px solid #e3e3e3c7;
+    border-bottom: 1px solid var(--border-color-3);
     position: sticky;
-    background: #ffffff;
+    background: var(--header-bg);
     top: 0;
     z-index: 10;
     &__wrapper {

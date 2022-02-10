@@ -10,7 +10,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease 0s;
+  transition: var(--transition);
 }
 .btn i {
   margin-right: 0.3rem;
@@ -18,6 +18,9 @@
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+}
+.btn--no-transform:hover {
+  transform: none;
 }
 .btn--xs {
   font-size: 0.6875rem;
@@ -41,6 +44,9 @@
 }
 .btn--lg svg {
   font-size: 1.6rem;
+}
+.btn--full {
+  width: 100%;
 }
 .btn--primary {
   background-color: var(--primary);
@@ -68,22 +74,94 @@
 .btn--round {
   border-radius: 5rem;
 }
-.btn--outline {
+.btn--outline.btn--primary {
   background: var(--primary-light);
-  color: var(--primary);
   border: 2px solid var(--primary);
+  color: var(--primary);
 }
-.btn--outline:hover {
+.btn--outline.btn--primary:hover {
   background: var(--primary);
   color: var(--white);
 }
-.btn--ghost {
+.btn--outline.btn--success {
+  background: var(--green-light);
+  border: 2px solid var(--green);
+  color: var(--green);
+}
+.btn--outline.btn--success:hover {
+  background: var(--green);
+  color: var(--white);
+}
+.btn--outline.btn--info {
+  background: var(--blue-light);
+  border: 2px solid var(--blue);
+  color: var(--blue);
+}
+.btn--outline.btn--info:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+.btn--outline.btn--danger {
+  background: var(--red-light);
+  border: 2px solid var(--red);
+  color: var(--red);
+}
+.btn--outline.btn--danger:hover {
+  background: var(--red);
+  color: var(--white);
+}
+.btn--outline.btn--warning {
+  background: var(--yellow-light);
+  border: 2px solid var(--yellow);
+  color: var(--yellow);
+}
+.btn--outline.btn--warning:hover {
+  background: var(--yellow);
+  color: var(--white);
+}
+.btn--ghost.btn--primary {
   background: var(--primary-light);
   border: none;
   color: var(--primary);
 }
-.btn--ghost:hover {
+.btn--ghost.btn--primary:hover {
   background: var(--primary);
+  color: var(--white);
+}
+.btn--ghost.btn--success {
+  background: var(--green-light);
+  border: none;
+  color: var(--green);
+}
+.btn--ghost.btn--success:hover {
+  background: var(--green);
+  color: var(--white);
+}
+.btn--ghost.btn--info {
+  background: var(--blue-light);
+  border: none;
+  color: var(--blue);
+}
+.btn--ghost.btn--info:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+.btn--ghost.btn--danger {
+  background: var(--red-light);
+  border: none;
+  color: var(--red);
+}
+.btn--ghost.btn--danger:hover {
+  background: var(--red);
+  color: var(--white);
+}
+.btn--ghost.btn--warning {
+  background: var(--yellow-light);
+  border: none;
+  color: var(--yellow);
+}
+.btn--ghost.btn--warning:hover {
+  background: var(--yellow);
   color: var(--white);
 }
 .btn--link {

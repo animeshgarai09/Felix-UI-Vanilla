@@ -39,7 +39,7 @@
 }
 
 .icon-badge {
-  font-size: 1.8rem;
+  font-size: 1.7em;
   height: 1.4em;
   width: 1.4em;
   border-radius: 50%;
@@ -51,17 +51,17 @@
 .icon-badge .badge {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 10px;
+  line-height: 0;
+  border-radius: 0.625rem;
   color: #ffffff;
   font-weight: 600;
   height: 1rem;
   min-width: 1rem;
-  font-size: 0.62rem;
+  font-size: 0.4em;
   position: absolute;
   top: 2px;
   left: 1.22rem;
-  border: 2px solid var(--page-bg);
+  border: 2px solid var(--white);
 }
 .icon-badge .badge--green {
   background: var(--green);

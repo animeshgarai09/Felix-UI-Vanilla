@@ -13,8 +13,8 @@
         display: flex;
         flex-direction: column;
         height: calc(100vh - 82px - 2rem);
-        overflow-y: scroll;
-        border-right: 2px solid #e7e7e7;
+        overflow-y: auto;
+        border-right: 2px solid var(--border-color-3);
         h6 {
             margin-bottom: 1.2rem;
         }
@@ -85,6 +85,11 @@
     code.hljs {
         border-radius: rem(10);
         padding: 1rem 2rem;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .hljs::-webkit-scrollbar {
+        display: none;
     }
     span > code {
         margin: 1rem 1.5rem;
@@ -182,8 +187,8 @@
 }
 
 .element_container {
-    border: 1px solid #ededed;
-    background: #ffffff;
+    border: 1px solid var(--border-color-3);
+    background: var(--element-container-bg);
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
