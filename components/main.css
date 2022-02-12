@@ -5,6 +5,8 @@
 @import url("./input/input.css");
 @import url("./card/card.css");
 @import url("./modal/modal.css");
+@import url("./toast/toast.css");
+@import url("./rating/rating.css");
 
 :root {
     --primary: #3bb77e;
