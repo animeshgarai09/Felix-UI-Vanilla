@@ -1,0 +1,53 @@
+.toast {
+  width: fit-content;
+  padding: 0.5rem;
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  font-weight: 500;
+  box-shadow: var(--box-shadow-1);
+  border-radius: 0.3rem;
+}
+.toast span {
+  display: flex;
+  margin-right: 1rem;
+  align-items: center;
+}
+.toast span::before {
+  content: "";
+  display: inline-block;
+  height: 2.4rem;
+  border-radius: 3px;
+  margin-right: 0.8rem;
+  width: 5px;
+}
+.toast--success {
+  background-color: var(--green-light);
+  color: var(--green);
+}
+.toast--success span::before {
+  background: var(--green);
+}
+.toast--danger {
+  background-color: var(--red-light);
+  color: var(--red);
+}
+.toast--danger span::before {
+  background: var(--red);
+}
+.toast--info {
+  background-color: var(--blue-light);
+  color: var(--blue);
+}
+.toast--info span::before {
+  background: var(--blue);
+}
+.toast--warning {
+  background-color: var(--yellow-light);
+  color: var(--yellow);
+}
+.toast--warning span::before {
+  background: var(--yellow);
+}
+
+/*# sourceMappingURL=toast.css.map */

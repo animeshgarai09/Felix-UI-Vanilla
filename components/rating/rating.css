@@ -1,0 +1,16 @@
+.rating i {
+  color: var(--gray-3);
+}
+.rating input {
+  display: none;
+}
+.rating input:checked + i {
+  color: var(--yellow);
+}
+.rating span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/*# sourceMappingURL=rating.css.map */

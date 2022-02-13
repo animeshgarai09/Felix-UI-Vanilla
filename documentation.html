@@ -16,10 +16,10 @@
             <div class="header__wrapper">
                 <a href="/"> <img src="/images/felix.png" class="header__logo" alt="" /></a>
                 <div class="header__links">
-                    <a href="/documentation.html#introduction" class="text-primary">Documentation</a>
-                    <a href="https://github.com/animeshgarai09/Felix-UI-Vanilla"
-                        ><button class="btn btn--primary btn--md btn--round btn--ghost"><i class="fab fa-github"></i>Github</button></a
-                    >
+                    <a href="/documentation.html#introduction" class="text-secondary">Documentation</a>
+                    <a href="https://github.com/animeshgarai09/Felix-UI-Vanilla" class="text-secondary">
+                        <button class="btn btn--primary btn--md btn--round btn--ghost"><i class="fab fa-github"></i>Github</button>
+                    </a>
                 </div>
             </div>
         </header>
@@ -40,8 +40,9 @@
                 <a href="#input" class="link">Input</a>
                 <a href="#list" class="link">List</a>
                 <a href="#modal" class="link">Modal</a>
-                <!-- <a href="#navigation" class="link">Navigation</a> -->
-                <!-- <a href="" class="link">Toggle Button</a> -->
+                <a href="#navigation" class="link">Navigation</a>
+                <a href="#rating" class="link">Rating</a>
+                <a href="#toast" class="link">Toast</a>
             </aside>
             <div class="container">
                 <div class="sub_container">
@@ -54,9 +55,6 @@
                                 <p>A light weight CSS component library to speed up your next awesome project</p>
                             </div>
                         </div>
-                        <!-- <h6>Felix UI is an open source styling framework, which helps Developers to use best styles and components,
-                             by using pre-defined classnames. Felix UI helps you to quickly build your Dream Project, 
-                             by focusing much on Functionality, because we take care of your Designs.</h6> -->
                         <p class="description">Felix UI is an open source styling framework, which helps Developers to use best styles and components,
                              by using pre-defined classnames. Felix UI helps you to quickly build your Dream Project, 
                              by focusing much on Functionality, because we take care of your Designs.</p>
@@ -75,7 +73,7 @@
                         <p>Felix UI comes with pre-defined colors, which are consistent in the overall design. The colors used are chosen on a generic basis, which can be accessed by pre-defined classes.</p>
                         
                         <h4>Default Palette</h4>
-                        <p>Below is the color palette, used by Sparrow, listed with the hex-codes.</p>
+                        <p>Below is the color palette, used by Felix, listed with the hex-codes.</p>
                         <div class="palette">
                             <div>
                                 <span>Primary</span>
@@ -258,7 +256,7 @@
                                     <span>There was an error processing your request!</span>
                                     <span>Request can not be processed due to insufficient funds in account.</span>
                                 </div>
-                                <button class="btn alert__close"><i class="fas fa-times"></i></button>
+                                <button class="btn btn--close">&times;</button>
                             </div>
                         </div>
                         <pre>
@@ -271,7 +269,7 @@
         <span>There was an error processing your request!</span>
         <span>Request can not be processed due to insufficient funds in account.</span>
     </div>
-    <button class="btn alert__close"><i class="fas fa-times"></i></button>
+    <button class="btn btn--close">&times;</button>
 </div>
     </code>
     </pre>
@@ -1694,6 +1692,141 @@ window.onclick = function(event) {
     </code>
 </pre>
             
+                    </section>
+
+                    <!------------------------------------------------------- Navigation section ------------------------------------------------------->
+                    <section id="navigation">
+                        <h1>Navigation</h1>
+                        <p>Navigation bar is used to navigate through the web apps or websites. This navigation component is responsive. It is a hamburger menu in medium and small devices</p>
+                        <h4>Example of generic navigation</h4>
+                        <div class="element_container block ">
+                            <header class="header">
+                                <div class="header__wrapper">
+                                    <a href="#"> Brand Logo</a>
+                                    <nav class="header__links">
+                                        <a href="#" class="text-secondary">Link-1</a>
+                                        <a href="#" class="text-secondary">Link-2</a>
+                                    </nav>
+                                </div>
+                            </header>
+                        </div>
+                        <pre>
+    <code class="html">
+<header class="header">
+    <div class="header__wrapper">
+        <a href="#"> Brand Logo</a>
+        <nav class="header__links">
+            <a href="#" class="text-secondary">Link-1</a>
+            <a href="#" class="text-secondary">Link-2</a>
+        </nav>
+    </div>
+</header>
+    </code>
+</pre>
+                    </section>
+                    <!------------------------------------------------------- Rating section ------------------------------------------------------->
+                    <section id="rating">
+                        <h1>Rating</h1>
+                        <p>Rating components can be used as read-only badge or in reviews section. Can be used in reviews section as form too.</p>
+                        <h4>Example of read-only ratings</h4>
+                        <div class="element_container ">
+                        <div class="rating">
+                            <label>
+                                <input type="checkbox" checked disabled >
+                                <i class="fas fa-star rating-star"></i>
+                            </label>
+                            <label>
+                                <input class="rating-star-input" type="checkbox" checked disabled>
+                                <i class="fas fa-star rating-star"></i>
+                            </label>
+                            <label>
+                                <input class="rating-star-input" type="checkbox" checked disabled>
+                                <i class="fas fa-star rating-star"></i>
+                            </label>
+                            <label>
+                                <input class="rating-star-input" type="checkbox" disabled >
+                                <i class="fas fa-star rating-star"></i>
+                            </label>
+                            <label>
+                                <input class="rating-star-input" type="checkbox" disabled >
+                                <i class="fas fa-star rating-star"></i>
+                            </label>
+                            <span>(3.1)</span>
+                        </div>
+                        </div>
+                        <pre>
+    <code class="html">
+<div class="rating">
+    <label>
+        <input type="checkbox" checked disabled >
+        <i class="fas fa-star rating-star"></i>
+    </label>
+    <label>
+        <input class="rating-star-input" type="checkbox" checked disabled>
+        <i class="fas fa-star rating-star"></i>
+    </label>
+    <label>
+        <input class="rating-star-input" type="checkbox" checked disabled>
+        <i class="fas fa-star rating-star"></i>
+    </label>
+    <label>
+        <input class="rating-star-input" type="checkbox" disabled >
+        <i class="fas fa-star rating-star"></i>
+    </label>
+    <label>
+        <input class="rating-star-input" type="checkbox" disabled >
+        <i class="fas fa-star rating-star"></i>
+    </label>
+    <span>(3.1)</span>
+</div>
+    </code>
+</pre>
+                    </section>
+                    <!------------------------------------------------------- Toast section ------------------------------------------------------->
+
+
+                    <section id="toast">
+                        <h1>Toast</h1>
+                        <p>This component can be used for toast or snackbar component. Toast is mostly used to show feedback message. Snackbar is to used show message that need user action</p>
+                        <h4>Example of Toast</h4>
+                        <div class="element_container ">
+                            <div class="toast toast--success">
+                                <span>Saved!</span> 
+                                <button type="button" class="btn btn--sm btn--close">&times;</button>
+                            </div>
+                            <div class="toast toast--warning">
+                                <span>Please fill the form!</span> 
+                                <button type="button" class="btn btn--sm btn--close">&times;</button>
+                            </div>
+                            <div class="toast toast--info">
+                                <span>Saving to server...</span> 
+                                <button type="button" class="btn btn--sm btn--close">&times;</button>
+                            </div>
+                            <div class="toast toast--danger">
+                                <span>Try again later!</span> 
+                                <button type="button" class="btn btn--sm btn--close">&times;</button>
+                            </div>
+                        </div>
+                        <pre>
+    <code class="html">
+<div class="toast toast--success">
+    <span>Saved!</span> 
+    <button type="button" class="btn btn--sm btn--close">&times;</button>
+</div>
+<div class="toast toast--warning">
+    <span>Please fill the form!</span> 
+    <button type="button" class="btn btn--sm btn--close">&times;</button>
+</div>
+<div class="toast toast--info">
+    <span>Saving to server...</span> 
+    <button type="button" class="btn btn--sm btn--close">&times;</button>
+</div>
+<div class="toast toast--danger">
+    <span>Try again later!</span> 
+    <button type="button" class="btn btn--sm btn--close">&times;</button>
+</div>
+    </code>
+</pre>
                     </section>
                 </div>
                 <footer class="footer">

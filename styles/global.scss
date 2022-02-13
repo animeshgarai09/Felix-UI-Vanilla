@@ -68,12 +68,8 @@ body {
     &__links {
         display: flex;
         align-items: center;
-        a:first-child {
-            margin-right: 1.5rem;
-            color: var(--black);
-            &:hover {
-                color: var(--primary);
-            }
+        a {
+            margin-left: 1.5rem;
         }
     }
 }

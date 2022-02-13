@@ -93,6 +93,16 @@
     &--round {
         border-radius: 5rem;
     }
+    &--close {
+        font-size: 1.6rem;
+        width: 2rem;
+        background: none;
+        color: var(--gray-2);
+        &:hover {
+            color: var(--gray-1);
+            transform: none;
+        }
+    }
     &--outline {
         &#{$p}--primary {
             @include base(primary);

@@ -70,12 +70,8 @@ body {
   display: flex;
   align-items: center;
 }
-.header__links a:first-child {
-  margin-right: 1.5rem;
-  color: var(--black);
-}
-.header__links a:first-child:hover {
-  color: var(--primary);
+.header__links a {
+  margin-left: 1.5rem;
 }
 
 .footer {

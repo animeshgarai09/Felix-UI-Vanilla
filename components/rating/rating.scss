@@ -1,0 +1,16 @@
+.rating {
+    i {
+        color: var(--gray-3);
+    }
+    input {
+        display: none;
+    }
+    input:checked + i {
+        color: var(--yellow);
+    }
+    span {
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+}
