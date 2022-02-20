@@ -26,10 +26,9 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    gap: 0.3rem;
     transition: var(--transition);
-    i {
-        margin-right: 0.3rem;
-    }
+
     &:hover {
         transform: translateY(-3px);
         box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
@@ -159,16 +158,6 @@
         flex-flow: row-reverse;
         svg {
             margin-left: 0.3rem;
-        }
-    }
-
-    &__icon {
-        &--md {
-            padding: 0 0.6rem;
-            font-size: 1.301rem;
-        }
-        svg {
-            margin: 0;
         }
     }
 }

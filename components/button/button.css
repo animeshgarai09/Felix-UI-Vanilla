@@ -10,10 +10,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  gap: 0.3rem;
   transition: var(--transition);
-}
-.btn i {
-  margin-right: 0.3rem;
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -197,13 +195,6 @@
 }
 .btn--right svg {
   margin-left: 0.3rem;
-}
-.btn__icon--md {
-  padding: 0 0.6rem;
-  font-size: 1.301rem;
-}
-.btn__icon svg {
-  margin: 0;
 }
 
 /*# sourceMappingURL=button.css.map */
