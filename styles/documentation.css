@@ -63,7 +63,8 @@
 .main h3 code,
 .main p code,
 .main ul code,
-.main li code {
+.main li code,
+.main td code {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 14px;
   color: #8d66d6;
@@ -202,7 +203,7 @@
   display: block;
 }
 .element_container .round {
-  width: 35%;
+  width: 31%;
 }
 
 .form-container {
@@ -277,6 +278,47 @@
 .list-style-none span {
   font-size: 0.8rem;
   color: var(--gray-3);
+}
+
+.text-doc-container {
+  margin-bottom: 2rem;
+}
+
+.fl-table {
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+.fl-table td,
+.fl-table th {
+  padding: 0.6rem 1rem;
+  text-align: left;
+}
+.fl-table td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 0.9rem;
+}
+.fl-table td:first-child {
+  width: 20%;
+}
+.fl-table thead th {
+  color: #ffffff;
+  background: var(--black);
+  border-radius: 0 10px 0 0;
+}
+.fl-table thead th:nth-child(odd) {
+  color: #ffffff;
+  border-radius: 10px 0 0 0;
+}
+.fl-table tr:nth-child(even) {
+  background: #f8f8f8;
 }
 
 /*# sourceMappingURL=documentation.css.map */

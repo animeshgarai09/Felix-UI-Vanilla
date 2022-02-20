@@ -65,7 +65,8 @@
     h3,
     p,
     ul,
-    li {
+    li,
+    td {
         code {
             font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
             font-size: 14px;
@@ -210,7 +211,7 @@
         display: block;
     }
     .round {
-        width: 35%;
+        width: 31%;
     }
 }
 
@@ -285,5 +286,48 @@
     span {
         font-size: 0.8rem;
         color: var(--gray-3);
+    }
+}
+.text-doc-container {
+    margin-bottom: 2rem;
+}
+.fl-table {
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+    margin-bottom: 2rem;
+    td,
+    th {
+        padding: 0.6rem 1rem;
+        text-align: left;
+    }
+
+    td {
+        border-right: 1px solid #f8f8f8;
+        font-size: 0.9rem;
+        &:first-child {
+            width: 20%;
+        }
+    }
+
+    thead th {
+        color: #ffffff;
+        background: var(--black);
+        border-radius: 0 10px 0 0;
+    }
+
+    thead th:nth-child(odd) {
+        color: #ffffff;
+        border-radius: 10px 0 0 0;
+    }
+
+    tr:nth-child(even) {
+        background: #f8f8f8;
     }
 }

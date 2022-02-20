@@ -67,7 +67,7 @@
   background: var(--yellow);
   color: var(--white);
 }
-.btn--danger {
+.btn--error {
   background: var(--red);
   color: var(--white);
 }
@@ -111,12 +111,12 @@
   background: var(--blue);
   color: var(--white);
 }
-.btn--outline.btn--danger {
+.btn--outline.btn--error {
   background: var(--red-light);
   border: 2px solid var(--red);
   color: var(--red);
 }
-.btn--outline.btn--danger:hover {
+.btn--outline.btn--error:hover {
   background: var(--red);
   color: var(--white);
 }
@@ -156,12 +156,12 @@
   background: var(--blue);
   color: var(--white);
 }
-.btn--ghost.btn--danger {
+.btn--ghost.btn--error {
   background: var(--red-light);
   border: none;
   color: var(--red);
 }
-.btn--ghost.btn--danger:hover {
+.btn--ghost.btn--error:hover {
   background: var(--red);
   color: var(--white);
 }

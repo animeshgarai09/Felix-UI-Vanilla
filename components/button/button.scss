@@ -84,7 +84,7 @@
         background: var(--yellow);
         color: var(--white);
     }
-    &--danger {
+    &--error {
         background: var(--red);
         color: var(--white);
     }
@@ -113,7 +113,7 @@
         &#{$p}--info {
             @include base(blue);
         }
-        &#{$p}--danger {
+        &#{$p}--error {
             @include base(red);
         }
         &#{$p}--warning {
@@ -130,7 +130,7 @@
         &#{$p}--info {
             @include base(blue, 1);
         }
-        &#{$p}--danger {
+        &#{$p}--error {
             @include base(red, 1);
         }
         &#{$p}--warning {

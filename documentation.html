@@ -47,7 +47,7 @@
             <div class="container">
                 <div class="sub_container">
                     <!------------------------------------------------------- Introduction section ------------------------------------------------------->
-                    
+
                     <section id="introduction">
                         <div class="hero-container">
                             <div class="text">
@@ -55,9 +55,9 @@
                                 <p>A light weight CSS component library to speed up your next awesome project</p>
                             </div>
                         </div>
-                        <p class="description">Felix UI is an open source styling framework, which helps Developers to use best styles and components,
-                             by using pre-defined classnames. Felix UI helps you to quickly build your Dream Project, 
-                             by focusing much on Functionality, because we take care of your Designs.</p>
+                        <p class="description">
+                            Felix UI is an open source styling framework, which helps Developers to use best styles and components, by using pre-defined classnames. Felix UI helps you to quickly build your Dream Project, by focusing much on Functionality, because we take care of your Designs.
+                        </p>
                         <h4>Quick start</h4>
                         <p>In order to introduce Felix UI to your project, Copy the Link given below and paste it in the <code>head</code> tag of your html, above all other style sheets.</p>
                         <pre>
@@ -71,7 +71,7 @@
                     <section id="colors">
                         <h1>Colors</h1>
                         <p>Felix UI comes with pre-defined colors, which are consistent in the overall design. The colors used are chosen on a generic basis, which can be accessed by pre-defined classes.</p>
-                        
+
                         <h4>Default Palette</h4>
                         <p>Below is the color palette, used by Felix, listed with the hex-codes.</p>
                         <div class="palette">
@@ -92,7 +92,7 @@
                                 <span>#20a779</span>
                             </div>
                             <div>
-                                <span>Danger</span>
+                                <span>Error</span>
                                 <span>#fd4e4e</span>
                             </div>
                             <div>
@@ -110,21 +110,20 @@
                             <span class="bg-secondary">.bg-secondary</span>
                             <span class="bg-gray">.bg-gray</span>
                             <span class="bg-success">.bg-success</span>
-                            <span class="bg-danger">.bg-danger</span>
+                            <span class="bg-error">.bg-error</span>
                             <span class="bg-warning">.bg-warning</span>
                             <span class="bg-info">.bg-info</span>
                         </div>
                         <div class="util-colors text-secondary">
-                            <span class="bg-primary-light ">.bg-primary-light</span>
-                            <span class="bg-secondary-light ">.bg-secondary-light</span>
-                            <span class="bg-gray-light ">.bg-gray-light</span>
-                            <span class="bg-success-light ">.bg-success-light</span>
-                            <span class="bg-danger-light ">.bg-danger-light</span>
-                            <span class="bg-warning-light ">.bg-warning-light</span>
-                            <span class="bg-info-light ">.bg-info-light</span>
+                            <span class="bg-primary-light">.bg-primary-light</span>
+                            <span class="bg-secondary-light">.bg-secondary-light</span>
+                            <span class="bg-gray-light">.bg-gray-light</span>
+                            <span class="bg-success-light">.bg-success-light</span>
+                            <span class="bg-error-light">.bg-error-light</span>
+                            <span class="bg-warning-light">.bg-warning-light</span>
+                            <span class="bg-info-light">.bg-info-light</span>
                         </div>
                     </section>
-
 
                     <!------------------------------------------------------- Typography section ------------------------------------------------------->
 
@@ -133,17 +132,71 @@
                         <p>Felix UI uses <code>Montserrat</code>, as its default font, which is a free font available at Google Fonts.</p>
 
                         <div class="text-doc-container">
-                            <h1>A Visual Type Scale</h1>
-                            <h2>A Visual Type Scale</h2>
-                            <h3>A Visual Type Scale</h3>
-                            <h4>A Visual Type Scale</h4>
-                            <h5>A Visual Type Scale</h5>
-                            <h6>A Visual Type Scale</h6>
-                            <p>A Visual Type Scale</p>
-                            <label>A Visual Type Scale</label>
+                            <h1>A Visual Type Scale - h1</h1>
+                            <h2>A Visual Type Scale - h2</h2>
+                            <h3>A Visual Type Scale - h3</h3>
+                            <h4>A Visual Type Scale - h4</h4>
+                            <h5>A Visual Type Scale - h5</h5>
+                            <h6>A Visual Type Scale - h6</h6>
+                            <p>A Visual Type Scale - p</p>
+                            <label>A Visual Type Scale - label</label>
                         </div>
+                        <h4>Utility Classes</h4>
+                        <table class="fl-table">
+                            <thead>
+                                <tr>
+                                    <th>Class Names</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>.text-primary</code></td>
+                                    <td>Change font color to Primary - <code>#3bb77e</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-secondary</code></td>
+                                    <td>Change font color to Secondary - <code>#2d3748</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-gray</code></td>
+                                    <td>Change font color to Gray - <code>#626262</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-success</code></td>
+                                    <td>Change font color to Success - <code>#20a779</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-error</code></td>
+                                    <td>Change font color to Error - <code>#f8aa1c</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-warning</code></td>
+                                    <td>Change font color to Warning - <code>#fd4e4e</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-info</code></td>
+                                    <td>Change font color to Info - <code>#007bc3</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-center</code></td>
+                                    <td>Used to center text in a block element</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-w-400</code></td>
+                                    <td>Used for setting font weight of <code>400</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-w-500</code></td>
+                                    <td>Used for setting font weight of <code>500</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-w-600</code></td>
+                                    <td>Used for setting font weight of <code>600</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </section>
-
 
                     <!------------------------------------------------------- Alert section ------------------------------------------------------->
 
@@ -548,7 +601,7 @@
                             <button class="btn btn--info">Info</button>
                             <button class="btn btn--success">Success</button>
                             <button class="btn btn--warning">Warning</button>
-                            <button class="btn btn--danger">Danger</button>
+                            <button class="btn btn--error">Error</button>
                             <!-- <button class="btn btn--primary">Primary</button> -->
                         </div>
                         <pre>
@@ -557,7 +610,7 @@
 <button class="btn btn--info">Info</button>
 <button class="btn btn--success">Success</button>
 <button class="btn btn--warning">Warning</button>
-<button class="btn btn--danger">Danger</button>
+<button class="btn btn--error">Error</button>
     </code>
 </pre>
                         <h4>Button variants</h4>
@@ -565,7 +618,7 @@
                             <button class="btn btn--primary btn--round">Primary</button>
                             <button class="btn btn--info btn--outline">Info</button>
                             <button class="btn btn--warning btn--round btn--outline">Warning</button>
-                            <button class="btn btn--danger btn--ghost">Danger</button>
+                            <button class="btn btn--error btn--ghost">Error</button>
                             <button class="btn btn--success btn--link">Success</button>
                         </div>
                         <pre>
@@ -573,16 +626,15 @@
 <button class="btn btn--primary btn--round">Primary</button>
 <button class="btn btn--info btn--outline">Info</button>
 <button class="btn btn--warning btn--round btn--outline">Warning</button>
-<button class="btn btn--danger btn--ghost">Danger</button>
+<button class="btn btn--error btn--ghost">Error</button>
 <button class="btn btn--success btn--link">Success</button>
     </code>
 </pre>
                     </section>
 
-                   <!------------------------------------------------------- Card section ------------------------------------------------------->
-                    
-                   <section id="card">
+                    <!------------------------------------------------------- Card section ------------------------------------------------------->
 
+                    <section id="card">
                         <h1>Card</h1>
                         <p>Card are used to show user related data collectively, like product details.</p>
                         <h4>Product card</h4>
@@ -594,7 +646,7 @@
                             <div class="card vertical">
                                 <div class="card__image">
                                     <badge class="badge badge--red">Sale</badge>
-                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
+                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                                 </div>
                                 <div class="card__content">
                                     <a class="card__category" href="#">Food</a>
@@ -607,7 +659,7 @@
                                             <span>Rs. 339</span>
                                         </div>
                                         <div class="card__button_con">
-                                            <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                            <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                             <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                         </div>
                                     </div>
@@ -616,7 +668,7 @@
                             <div class="card vertical">
                                 <div class="card__image">
                                     <badge class="badge badge--red">Sale</badge>
-                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
+                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                                 </div>
                                 <div class="card__content">
                                     <a class="card__category" href="#">Food</a>
@@ -629,7 +681,7 @@
                                             <span>Rs. 339</span>
                                         </div>
                                         <div class="card__button_con">
-                                            <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                            <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                             <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                         </div>
                                     </div>
@@ -638,7 +690,7 @@
                             <div class="card vertical">
                                 <div class="card__image">
                                     <badge class="badge badge--red">Sale</badge>
-                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
+                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                                 </div>
                                 <div class="card__content">
                                     <a class="card__category" href="#">Food</a>
@@ -651,7 +703,7 @@
                                             <span>Rs. 339</span>
                                         </div>
                                         <div class="card__button_con">
-                                            <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                            <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                             <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                         </div>
                                     </div>
@@ -676,7 +728,7 @@
                 <span>Rs. 339</span>
             </div>
             <div class="card__button_con">
-                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
             </div>
         </div>
@@ -684,55 +736,55 @@
 </div>
     </code>
 </pre>
-                    <h4>Horizontal card</h4>
-                    <p>To the product card horizontal just add <code>.horizontal</code> class to parent element.</p>
-                    <div class="grid col-2-even">
-                        <div class="card horizontal">
-                            <div class="card__image">
-                                <badge class="badge badge--red">Sale</badge>
-                                <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
-                            </div>
-                            <div class="card__content">
-                                <a class="card__category" href="#">Food</a>
-                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
-                                <span class="card__vendor">By <a href="">Nestle</a></span>
-                                <div class="card__bottom">
-                                    <div class="card__price">
-                                        <span>Rs. 250</span>
-                                        <span>Rs. 339</span>
+                        <h4>Horizontal card</h4>
+                        <p>To the product card horizontal just add <code>.horizontal</code> class to parent element.</p>
+                        <div class="grid col-2-even">
+                            <div class="card horizontal">
+                                <div class="card__image">
+                                    <badge class="badge badge--red">Sale</badge>
+                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__category" href="#">Food</a>
+                                    <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                    <span class="card__vendor">By <a href="">Nestle</a></span>
+                                    <div class="card__bottom">
+                                        <div class="card__price">
+                                            <span>Rs. 250</span>
+                                            <span>Rs. 339</span>
+                                        </div>
+                                        <div class="card__button_con">
+                                            <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
+                                            <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                        </div>
                                     </div>
-                                    <div class="card__button_con">
-                                        <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
-                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                </div>
+                            </div>
+                            <div class="card horizontal">
+                                <div class="card__image">
+                                    <badge class="badge badge--red">Sale</badge>
+                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__category" href="#">Food</a>
+                                    <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                    <span class="card__vendor">By <a href="">Nestle</a></span>
+                                    <div class="card__bottom">
+                                        <div class="card__price">
+                                            <span>Rs. 250</span>
+                                            <span>Rs. 339</span>
+                                        </div>
+                                        <div class="card__button_con">
+                                            <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
+                                            <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card horizontal">
-                            <div class="card__image">
-                                <badge class="badge badge--red">Sale</badge>
-                                <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
-                            </div>
-                            <div class="card__content">
-                                <a class="card__category" href="#">Food</a>
-                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
-                                <span class="card__vendor">By <a href="">Nestle</a></span>
-                                <div class="card__bottom">
-                                    <div class="card__price">
-                                        <span>Rs. 250</span>
-                                        <span>Rs. 339</span>
-                                    </div>
-                                    <div class="card__button_con">
-                                        <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
-                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <pre>
+                        <pre>
     <code class="html">
 <div class="card horizontal">
     <div class="card__image">
@@ -750,7 +802,7 @@
                 <span>Rs. 339</span>
             </div>
             <div class="card__button_con">
-                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
             </div>
         </div>
@@ -758,55 +810,55 @@
 </div>
     </code>
 </pre>
-                    <h4>Text only card</h4>
-                    <p>To show only the text details of a product just add <code>.text-only</code> class in parent element to hide product images.</p>
-                    <div class="grid col-2-even">
-                        <div class="card horizontal text-only">
-                            <div class="card__image">
-                                <badge class="badge badge--red">Sale</badge>
-                                <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
-                            </div>
-                            <div class="card__content">
-                                <a class="card__category" href="#">Food</a>
-                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
-                                <span class="card__vendor">By <a href="">Nestle</a></span>
-                                <div class="card__bottom">
-                                    <div class="card__price">
-                                        <span>Rs. 250</span>
-                                        <span>Rs. 339</span>
+                        <h4>Text only card</h4>
+                        <p>To show only the text details of a product just add <code>.text-only</code> class in parent element to hide product images.</p>
+                        <div class="grid col-2-even">
+                            <div class="card horizontal text-only">
+                                <div class="card__image">
+                                    <badge class="badge badge--red">Sale</badge>
+                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__category" href="#">Food</a>
+                                    <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                    <span class="card__vendor">By <a href="">Nestle</a></span>
+                                    <div class="card__bottom">
+                                        <div class="card__price">
+                                            <span>Rs. 250</span>
+                                            <span>Rs. 339</span>
+                                        </div>
+                                        <div class="card__button_con">
+                                            <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
+                                            <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                        </div>
                                     </div>
-                                    <div class="card__button_con">
-                                        <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
-                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                </div>
+                            </div>
+                            <div class="card horizontal text-only">
+                                <div class="card__image">
+                                    <badge class="badge badge--red">Sale</badge>
+                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
+                                </div>
+                                <div class="card__content">
+                                    <a class="card__category" href="#">Food</a>
+                                    <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
+                                    <span class="card__vendor">By <a href="">Nestle</a></span>
+                                    <div class="card__bottom">
+                                        <div class="card__price">
+                                            <span>Rs. 250</span>
+                                            <span>Rs. 339</span>
+                                        </div>
+                                        <div class="card__button_con">
+                                            <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
+                                            <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card horizontal text-only">
-                            <div class="card__image">
-                                <badge class="badge badge--red">Sale</badge>
-                                <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
-                            </div>
-                            <div class="card__content">
-                                <a class="card__category" href="#">Food</a>
-                                <a class="card__name" href="#">Angie’s Boomchickapop Sweet & Salty</a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.</p>
-                                <span class="card__vendor">By <a href="">Nestle</a></span>
-                                <div class="card__bottom">
-                                    <div class="card__price">
-                                        <span>Rs. 250</span>
-                                        <span>Rs. 339</span>
-                                    </div>
-                                    <div class="card__button_con">
-                                        <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
-                                        <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <pre>
+                        <pre>
     <code class="html">
 <div class="card horizontal text-only">
     <div class="card__image">
@@ -824,21 +876,21 @@
                 <span>Rs. 339</span>
             </div>
             <div class="card__button_con">
-                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
             </div>
         </div>
     </div>
 </div>
     </code>
-</pre>    
-                <h4>Card with overlay</h4>
-                <p>To show an overlay on a product just add a <code>div</code> element with<code> .card__overlay</code> class with desired text.</p>
-                <div class="grid col-3-even">
+</pre>
+                        <h4>Card with overlay</h4>
+                        <p>To show an overlay on a product just add a <code>div</code> element with<code> .card__overlay</code> class with desired text.</p>
+                        <div class="grid col-3-even">
                             <div class="card vertical">
                                 <div class="card__image">
                                     <badge class="badge badge--red">Sale</badge>
-                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
+                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                                 </div>
                                 <div class="card__content">
                                     <a class="card__category" href="#">Food</a>
@@ -851,7 +903,7 @@
                                             <span>Rs. 339</span>
                                         </div>
                                         <div class="card__button_con">
-                                            <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                            <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                             <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                         </div>
                                     </div>
@@ -861,7 +913,7 @@
                                 <div class="card__overlay">Out of stock</div>
                                 <div class="card__image">
                                     <badge class="badge badge--red">Sale</badge>
-                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
+                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                                 </div>
                                 <div class="card__content">
                                     <a class="card__category" href="#">Food</a>
@@ -874,7 +926,7 @@
                                             <span>Rs. 339</span>
                                         </div>
                                         <div class="card__button_con">
-                                            <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                            <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                             <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                         </div>
                                     </div>
@@ -884,7 +936,7 @@
                                 <span class="card__remove"><i class="fas fa-times" aria-hidden="true"></i></span>
                                 <div class="card__image">
                                     <badge class="badge badge--red">Sale</badge>
-                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg"/></a>
+                                    <a href="#"><img class="img-fluid" src="/images/product.jpeg" /></a>
                                 </div>
                                 <div class="card__content">
                                     <a class="card__category" href="#">Food</a>
@@ -897,7 +949,7 @@
                                             <span>Rs. 339</span>
                                         </div>
                                         <div class="card__button_con">
-                                            <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                            <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                             <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                         </div>
                                     </div>
@@ -924,7 +976,7 @@
                 <span>Rs. 339</span>
             </div>
             <div class="card__button_con">
-                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
             </div>
         </div>
@@ -950,27 +1002,27 @@
                 <span>Rs. 339</span>
             </div>
             <div class="card__button_con">
-                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
             </div>
         </div>
     </div>
 </div>
     </code>
-</pre>    
-                </section>
+</pre>
+                    </section>
                     <!------------------------------------------------------- Grid section ------------------------------------------------------->
                     <section id="grid">
                         <h1>Grid</h1>
                         <p>Use grid when you want to divide screen width into column. Check below some examples of side by side cards.</p>
                         <h4>Two column grid</h4>
                         <p>To create a two colum grid add <code>.grid</code> class to parent container div and arrange it according to your need with below utility classes.</p>
-                        <ul >
+                        <ul>
                             <li><code>col-2-even</code> : To evenly divide a row into 2 columns.</li>
                             <li><code>col-2-right-expand</code> : To divide a row into 2 columns where right column is stretched.</li>
                             <li><code>col-2-left-expand</code> : To divide a row into 2 columns where left column is stretched.</li>
                         </ul>
-                        <div class="element_container ">
+                        <div class="element_container">
                             <div class="grid col-2-right-expand">
                                 <div class="card horizontal text-only">
                                     <div class="card__content">
@@ -984,7 +1036,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1002,7 +1054,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1022,7 +1074,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1040,7 +1092,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1060,7 +1112,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1078,7 +1130,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1130,7 +1182,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1148,7 +1200,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1166,7 +1218,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1186,7 +1238,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1204,7 +1256,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1222,7 +1274,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1242,7 +1294,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1260,7 +1312,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1278,7 +1330,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1298,7 +1350,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1316,7 +1368,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1334,7 +1386,7 @@
                                                 <span>Rs. 339</span>
                                             </div>
                                             <div class="card__button_con">
-                                                <button class="btn btn--sm text-danger"><i class="far fa-heart"></i></button>
+                                                <button class="btn btn--sm text-error"><i class="far fa-heart"></i></button>
                                                 <button class="btn btn--sm btn--primary btn--ghost"><i class="fas fa-plus"></i>Add</button>
                                             </div>
                                         </div>
@@ -1387,8 +1439,9 @@
 </pre>
                         <h4>Rounded images</h4>
                         <div class="element_container">
-                            <img src="/images/flower.jpg" class="img-fluid round" alt="flower" />
-                            <img src="/images/sp.jpg" class="img-fluid round" alt="plant" />
+                            <img src="/images/flower-1.jpg" class="img-fluid round" alt="avatar" />
+                            <img src="/images/flower-2.jpg" class="img-fluid round" alt="avatar" />
+                            <img src="/images/flower-3.jpg" class="img-fluid round" alt="avatar" />
                         </div>
                         <pre>
     <code class="html">
@@ -1397,7 +1450,7 @@
     </code>
 </pre>
                     </section>
- 
+
                     <!------------------------------------------------------- Input section ------------------------------------------------------->
 
                     <section id="input">
@@ -1498,47 +1551,74 @@
                     <section id="list">
                         <h1>List</h1>
                         <p>Lists can be used at so many places, navigation bar, stacked notifications, article pages, etc.</p>
-                        <ul>
-                            <li><code>list-style-disc</code> : To add disc style for <code>ul</code> list items.</li>
-                            <li><code>list-style-square</code> : To add square style for <code>ul</code> list items.</li>
-                            <li><code>list-style-circle</code> : To add circle style for <code>ul</code> list item.</li>
-                            <li><code>list-style-number</code> : To add number style for <code>ol</code> list item.</li>
-                            <li><code>list-style-lowerLetter</code> : To add lower case letter style for <code>ol</code> list item.</li>
-                            <li><code>list-style-upperLetter</code> : To add Upper case letter style for <code>ol</code> list item.</li>
-                        </ul>
-                        <div class="element_container ">
-                            <ul class="list-style-disc"> 
+                        <table class="fl-table">
+                            <thead>
+                                <tr>
+                                    <th>Class Names</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>list-style-disc</code></td>
+                                    <td>To add disc style for <code>ul</code> list items.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>list-style-square</code></td>
+                                    <td>To add square style for <code>ul</code> list items.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>list-style-circle</code></td>
+                                    <td>To add circle style for <code>ul</code> list item.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>list-style-number</code></td>
+                                    <td>To add number style for <code>ol</code> list item.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>list-style-lowerLetter</code></td>
+                                    <td>To add lower case letter style for <code>ol</code> list item.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>list-style-upperLetter</code></td>
+                                    <td>To add Upper case letter style for <code>ol</code> list item.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="element_container">
+                            <ul class="list-style-disc">
                                 <li>list item1</li>
                                 <li>list item2</li>
                                 <li>list item3</li>
                             </ul>
-                            <ul class="list-style-square"> 
+                            <ul class="list-style-square">
                                 <li>list item1</li>
                                 <li>list item2</li>
                                 <li>list item3</li>
                             </ul>
-                            <ul class="list-style-circle"> 
+                            <ul class="list-style-circle">
                                 <li>list item1</li>
                                 <li>list item2</li>
                                 <li>list item3</li>
                             </ul>
-                            <ol class="list-style-number"> 
+                            <ol class="list-style-number">
                                 <li>list item1</li>
                                 <li>list item2</li>
                                 <li>list item3</li>
                             </ol>
-                            <ol class="list-style-lowerLetter"> 
+                            <ol class="list-style-lowerLetter">
                                 <li>list item1</li>
                                 <li>list item2</li>
                                 <li>list item3</li>
                             </ol>
-                            <ol class="list-style-upperLetter"> 
+                            <ol class="list-style-upperLetter">
                                 <li>list item1</li>
                                 <li>list item2</li>
                                 <li>list item3</li>
                             </ol>
                         </div>
-<pre>
+                        <pre>
     <code class="html">
 <ul class="list-style-disc"> 
     {list items...}
@@ -1562,8 +1642,8 @@
 </pre>
                         <h4>Stacked list for notification</h4>
                         <p>To strip away any list styling, add <code>list-style-none</code> class to stack items without any default list styles.</p>
-                        <div class="element_container ">
-                             <ul class="list-style-none"> 
+                        <div class="element_container">
+                            <ul class="list-style-none">
                                 <li>
                                     <p class="text-w-500">user added</p>
                                     <span>@new-user just folowed you</span>
@@ -1613,7 +1693,7 @@
                         <p>Modals are positioned over everything else in the document and remove scroll from the page. It gets closed only with close button on modal pop-up.</p>
                         <h4>Live demo</h4>
                         <p>Click on the below CTA to open modal. Once the modal is open user will not be able to scroll or do any action on the main page. To close the pop-up, click on close icon or Back button. Functionality is achieved using JavaScript</p>
-                        <div class="element_container ">
+                        <div class="element_container">
                             <button id="myBtn" class="btn btn--primary">Open demo modal</button>
                         </div>
                         <div id="myModal" class="modal modal--md" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -1621,12 +1701,12 @@
                                 <div class="modal__header">
                                     <h3 class="modal__title" id="exampleModalLongTitle">Modal title</h3>
                                     <button type="button" class="btn btn--sm close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal__body text-center">
                                     <h1>This is a demo modal</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam natus sint dicta sed id voluptate atque, sequi error aliquid consequatur facere adipisci a quidem similique ex doloribus reprehenderit ratione cumque? </p>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam natus sint dicta sed id voluptate atque, sequi error aliquid consequatur facere adipisci a quidem similique ex doloribus reprehenderit ratione cumque?</p>
                                 </div>
                                 <div class="modal__footer">
                                     <button type="button" class="btn" data-dismiss="modal">Close</button>
@@ -1658,8 +1738,8 @@
 </div>
     </code>
 </pre>
-                            <h4>Javascript</h4>
-<pre>
+                        <h4>Javascript</h4>
+                        <pre>
     <code class="javascript">
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -1691,7 +1771,6 @@ window.onclick = function(event) {
 }
     </code>
 </pre>
-            
                     </section>
 
                     <!------------------------------------------------------- Navigation section ------------------------------------------------------->
@@ -1699,7 +1778,7 @@ window.onclick = function(event) {
                         <h1>Navigation</h1>
                         <p>Navigation bar is used to navigate through the web apps or websites. This navigation component is responsive. It is a hamburger menu in medium and small devices</p>
                         <h4>Example of generic navigation</h4>
-                        <div class="element_container block ">
+                        <div class="element_container block">
                             <header class="header">
                                 <div class="header__wrapper">
                                     <a href="#"> Brand Logo</a>
@@ -1729,30 +1808,30 @@ window.onclick = function(event) {
                         <h1>Rating</h1>
                         <p>Rating components can be used as read-only badge or in reviews section. Can be used in reviews section as form too.</p>
                         <h4>Example of read-only ratings</h4>
-                        <div class="element_container ">
-                        <div class="rating">
-                            <label>
-                                <input type="checkbox" checked disabled >
-                                <i class="fas fa-star rating-star"></i>
-                            </label>
-                            <label>
-                                <input class="rating-star-input" type="checkbox" checked disabled>
-                                <i class="fas fa-star rating-star"></i>
-                            </label>
-                            <label>
-                                <input class="rating-star-input" type="checkbox" checked disabled>
-                                <i class="fas fa-star rating-star"></i>
-                            </label>
-                            <label>
-                                <input class="rating-star-input" type="checkbox" disabled >
-                                <i class="fas fa-star rating-star"></i>
-                            </label>
-                            <label>
-                                <input class="rating-star-input" type="checkbox" disabled >
-                                <i class="fas fa-star rating-star"></i>
-                            </label>
-                            <span>(3.1)</span>
-                        </div>
+                        <div class="element_container">
+                            <div class="rating">
+                                <label>
+                                    <input type="checkbox" checked disabled />
+                                    <i class="fas fa-star rating-star"></i>
+                                </label>
+                                <label>
+                                    <input class="rating-star-input" type="checkbox" checked disabled />
+                                    <i class="fas fa-star rating-star"></i>
+                                </label>
+                                <label>
+                                    <input class="rating-star-input" type="checkbox" checked disabled />
+                                    <i class="fas fa-star rating-star"></i>
+                                </label>
+                                <label>
+                                    <input class="rating-star-input" type="checkbox" disabled />
+                                    <i class="fas fa-star rating-star"></i>
+                                </label>
+                                <label>
+                                    <input class="rating-star-input" type="checkbox" disabled />
+                                    <i class="fas fa-star rating-star"></i>
+                                </label>
+                                <span>(3.1)</span>
+                            </div>
                         </div>
                         <pre>
     <code class="html">
@@ -1784,26 +1863,25 @@ window.onclick = function(event) {
                     </section>
                     <!------------------------------------------------------- Toast section ------------------------------------------------------->
 
-
                     <section id="toast">
                         <h1>Toast</h1>
                         <p>This component can be used for toast or snackbar component. Toast is mostly used to show feedback message. Snackbar is to used show message that need user action</p>
                         <h4>Example of Toast</h4>
-                        <div class="element_container ">
+                        <div class="element_container">
                             <div class="toast toast--success">
-                                <span>Saved!</span> 
+                                <span>Saved!</span>
                                 <button type="button" class="btn btn--sm btn--close">&times;</button>
                             </div>
                             <div class="toast toast--warning">
-                                <span>Please fill the form!</span> 
+                                <span>Please fill the form!</span>
                                 <button type="button" class="btn btn--sm btn--close">&times;</button>
                             </div>
                             <div class="toast toast--info">
-                                <span>Saving to server...</span> 
+                                <span>Saving to server...</span>
                                 <button type="button" class="btn btn--sm btn--close">&times;</button>
                             </div>
-                            <div class="toast toast--danger">
-                                <span>Try again later!</span> 
+                            <div class="toast toast--error">
+                                <span>Try again later!</span>
                                 <button type="button" class="btn btn--sm btn--close">&times;</button>
                             </div>
                         </div>
@@ -1821,7 +1899,7 @@ window.onclick = function(event) {
     <span>Saving to server...</span> 
     <button type="button" class="btn btn--sm btn--close">&times;</button>
 </div>
-<div class="toast toast--danger">
+<div class="toast toast--error">
     <span>Try again later!</span> 
     <button type="button" class="btn btn--sm btn--close">&times;</button>
 </div>
@@ -1837,9 +1915,7 @@ window.onclick = function(event) {
                         <a href="https://www.linkedin.com/in/animesh-garai-29a5251b4"><i class="fab fa-linkedin"></i></a>
                         <a href="mailto:animeshgarai09@gmail.com"><i class="fas fa-envelope"></i></a>
                     </div>
-
-            </footer>
-        </div>
+                </footer>
             </div>
         </main>
 
@@ -1871,31 +1947,31 @@ window.onclick = function(event) {
             })
 
             // Get the modal
-            var modal = document.getElementById("myModal");
+            var modal = document.getElementById("myModal")
 
             // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
+            var btn = document.getElementById("myBtn")
 
             // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
+            var span = document.getElementsByClassName("close")[0]
 
-            // When the user clicks the button, open the modal 
-            btn.onclick = function() {
-                modal.style.display = "block";
-                document.body.style.overflow = "hidden";
+            // When the user clicks the button, open the modal
+            btn.onclick = function () {
+                modal.style.display = "block"
+                document.body.style.overflow = "hidden"
             }
 
             // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-                document.body.style.overflow = "visible";
+            span.onclick = function () {
+                modal.style.display = "none"
+                document.body.style.overflow = "visible"
             }
 
             // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
+            window.onclick = function (event) {
                 if (event.target == modal) {
-                    modal.style.display = "none";
-                    document.body.style.overflow = "visible";
+                    modal.style.display = "none"
+                    document.body.style.overflow = "visible"
                 }
             }
         </script>

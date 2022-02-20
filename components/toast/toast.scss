@@ -30,7 +30,7 @@
         }
     }
 
-    &--danger {
+    &--error {
         background-color: var(--red-light);
         color: var(--red);
         span::before {

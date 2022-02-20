@@ -28,11 +28,11 @@
 .toast--success span::before {
   background: var(--green);
 }
-.toast--danger {
+.toast--error {
   background-color: var(--red-light);
   color: var(--red);
 }
-.toast--danger span::before {
+.toast--error span::before {
   background: var(--red);
 }
 .toast--info {

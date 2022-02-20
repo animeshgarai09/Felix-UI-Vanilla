@@ -185,7 +185,7 @@ input:focus {
 .bg-warning {
     background-color: var(--yellow);
 }
-.bg-danger {
+.bg-error {
     background-color: var(--red);
 }
 .bg-info {
@@ -207,7 +207,7 @@ input:focus {
 .bg-warning-light {
     background-color: var(--yellow-light);
 }
-.bg-danger-light {
+.bg-error-light {
     background-color: var(--red-light);
 }
 .bg-info-light {
@@ -229,7 +229,7 @@ input:focus {
 .text-warning {
     color: var(--yellow);
 }
-.text-danger {
+.text-error {
     color: var(--red);
 }
 .text-info {
