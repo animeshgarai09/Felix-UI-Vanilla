@@ -7,6 +7,7 @@
 @import url("./modal/modal.css");
 @import url("./toast/toast.css");
 @import url("./rating/rating.css");
+@import url("./slider/slider.css");
 
 :root {
     --primary: #3bb77e;

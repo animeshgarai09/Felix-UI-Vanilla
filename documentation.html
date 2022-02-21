@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Documentation | Felix UI</title>
+        <link rel="icon" type="image/x-icon" href="/images/fav.svg" />
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css" />
         <link rel="stylesheet" href="styles/documentation.css" />
         <link rel="stylesheet" href="styles/global.css" />
@@ -17,7 +18,7 @@
                 <a href="/"> <img src="/images/felix.png" class="header__logo" alt="" /></a>
                 <div class="header__links">
                     <a href="/documentation.html#introduction" class="text-secondary">Documentation</a>
-                    <a href="https://github.com/animeshgarai09/Felix-UI-Vanilla" class="text-secondary">
+                    <a href="https://github.com/animeshgarai09/Felix-UI-Vanilla/tree/dev" class="text-secondary">
                         <button class="btn btn--primary btn--md btn--round btn--ghost"><i class="fab fa-github"></i>Github</button>
                     </a>
                 </div>
@@ -43,6 +44,7 @@
                 <a href="#navigation" class="link">Navigation</a>
                 <a href="#rating" class="link">Rating</a>
                 <a href="#toast" class="link">Toast</a>
+                <a href="#slider" class="link">Slider</a>
             </aside>
             <div class="container">
                 <div class="sub_container">
@@ -62,7 +64,7 @@
                         <p>In order to introduce Felix UI to your project, Copy the Link given below and paste it in the <code>head</code> tag of your html, above all other style sheets.</p>
                         <pre>
     <code class="html">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/animeshgarai09/Felix-UI-Vanilla@dev/components/main.min.css">
+<link rel="stylesheet" href="https://felix-ui-dev.netlify.app/components/main.css">
     </code>
     </pre>
                     </section>
@@ -215,7 +217,7 @@
                             </div>
                         </div>
                         <h4>Alert theme</h4>
-                        <p>Alerts are available in 4 different color scheme show case any system alert to users</p>
+                        <p>Alerts are available in 4 different color scheme show case any system alert to users.</p>
                         <div class="element_container column">
                             <div class="alert alert--success" role="alert">
                                 <div class="alert__icon">
@@ -435,7 +437,7 @@
     </code>
 </pre>
                         <h4>Avatar with badges</h4>
-                        <p>Badges indicate status of a particular avatar</p>
+                        <p>Badges indicate status of a particular avatar.</p>
                         <div class="element_container">
                             <div class="avatar avatar--md">
                                 <img src="/images/1.jpeg" alt="avatar" />
@@ -1738,7 +1740,7 @@
 </div>
     </code>
 </pre>
-                        <h4>Javascript</h4>
+                        <h4>JavaScript</h4>
                         <pre>
     <code class="javascript">
 // Get the modal
@@ -1751,22 +1753,22 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-    document.body.style.overflow = "hidden";
+btn.onclick = ()=> {
+    modal.style.display = "block"
+    document.body.style.overflow = "hidden"
 }
 
-// When the user clicks on span (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-    document.body.style.overflow = "visible";
+// When the user clicks on <span> (x), close the modal
+span.onclick = ()=> {
+    modal.style.display = "none"
+    document.body.style.overflow = "visible"
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = (event)=> {
     if (event.target == modal) {
-        modal.style.display = "none";
-        document.body.style.overflow = "visible";
+        modal.style.display = "none"
+        document.body.style.overflow = "visible"
     }
 }
     </code>
@@ -1906,6 +1908,54 @@ window.onclick = function(event) {
     </code>
 </pre>
                     </section>
+                    <!------------------------------------------------------- Slider section ------------------------------------------------------->
+                    <section id="slider">
+                        <h1>Slider</h1>
+                        <p>Sliders are used to decide range for something like sound in videos, price in shopping sites, etc.</p>
+                        <h4>Example</h4>
+                        <div class="element_container">
+                            <div class="range">
+                                <div class="slider">
+                                    <input type="range" min="0" max="100" step="0.1" value="0" />
+                                    <div class="track">
+                                        <div class="track-inner"></div>
+                                    </div>
+                                    <div class="thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+    <code class="html">
+<div class="range">
+    <div class="slider">
+        <input type="range" min="0" max="100" step="0.1" value="0" />
+        <div class="track">
+            <div class="track-inner"></div>
+        </div>
+        <div class="thumb"></div>
+    </div>
+</div>
+    </code>
+</pre>
+                        <h4>JavaScript</h4>
+                        <pre>
+    <code class="javascript">
+const range = document.querySelector(".range")
+const thumb = document.querySelector(".thumb")
+const track = document.querySelector(".track-inner")
+
+const updateSlider = (value) => {
+    thumb.style.left = `${value}%`
+    thumb.style.transform = `translate(-${value}%, -50%)`
+    track.style.width = `${value}%`
+}
+
+range.oninput = (e) => updateSlider(e.target.value)
+
+updateSlider(50)
+    </code>
+</pre>
+                    </section>
                 </div>
                 <footer class="footer">
                     <span>Made with <i class="fas fa-heart"></i> by <a href="https://portfolio-alpha-liart.vercel.app/" class="text-gray"> Animesh Garai</a></span>
@@ -1942,7 +1992,7 @@ window.onclick = function(event) {
                     }
                 })
             }
-            document.querySelectorAll("code").forEach((element) => {
+            document.querySelectorAll("code.html").forEach((element) => {
                 element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;")
             })
 
@@ -1956,24 +2006,38 @@ window.onclick = function(event) {
             var span = document.getElementsByClassName("close")[0]
 
             // When the user clicks the button, open the modal
-            btn.onclick = function () {
+            btn.onclick = ()=> {
                 modal.style.display = "block"
                 document.body.style.overflow = "hidden"
             }
 
             // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
+            span.onclick = ()=> {
                 modal.style.display = "none"
                 document.body.style.overflow = "visible"
             }
 
             // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
+            window.onclick = (event)=> {
                 if (event.target == modal) {
                     modal.style.display = "none"
                     document.body.style.overflow = "visible"
                 }
             }
+
+            const range = document.querySelector(".range")
+            const thumb = document.querySelector(".thumb")
+            const track = document.querySelector(".track-inner")
+
+            const updateSlider = (value) => {
+                thumb.style.left = `${value}%`
+                thumb.style.transform = `translate(-${value}%, -50%)`
+                track.style.width = `${value}%`
+            }
+
+            range.oninput = (e) => updateSlider(e.target.value)
+
+            updateSlider(50)
         </script>
     </body>
 </html>
