@@ -57,7 +57,7 @@ To start using the components in your project, Copy-paste the stylesheet `<link>
 
 Colors are integral part of a UI and UX. Felix UI ship with aesthetically pleasing color pallet.
 
-Find more detail on below topics of _Colors_ visit https://://felix-ui-dev.netlify.app/documentation.html#colors
+To find more detail on the below topics visit documentation on [Colors](https://://felix-ui-dev.netlify.app/documentation.html#colors)
 
 | Color     | Hex                                                              |
 | --------- | ---------------------------------------------------------------- |
@@ -78,7 +78,7 @@ Find more detail on below topics of _Colors_ visit https://://felix-ui-dev.netli
 
 Use Typography to format text content on your web site.
 
-Find more detail on below topics of _Typography_ visit https://felix-ui-dev.netlify.app/documentation.html#typography
+To find more detail on the below topics visit documentation on [Typography](https://felix-ui-dev.netlify.app/documentation.html#typography)
 
 -   Display
 -   Headings
@@ -91,7 +91,7 @@ Find more detail on below topics of _Typography_ visit https://felix-ui-dev.netl
 
 Alerts are used to communicate a state that affects a system, feature or page. Alerts can be used to important messages to the user.
 
-Find more detail on below topics of _Alert_ visit https://felix-ui-dev.netlify.app/documentation.html#alert
+To find more detail on the below topics visit documentation on [Alert](https://felix-ui-dev.netlify.app/documentation.html#alert)
 
 -   Primary alert
 -   Error alert
@@ -105,7 +105,7 @@ Find more detail on below topics of _Alert_ visit https://felix-ui-dev.netlify.a
 
 Avatar is used to represent a user, and displays the profile picture or initials.
 
-Find more detail on below topics of _Avatar_ visit https://felix-ui-dev.netlify.app/documentation.html#avatar
+To find more detail on the below topics visit documentation on [Avatar](https://felix-ui-dev.netlify.app/documentation.html#avatar)
 
 -   Name initials avatars
 -   Different sized avatars
@@ -118,7 +118,7 @@ Find more detail on below topics of _Avatar_ visit https://felix-ui-dev.netlify.
 
 Badges are used to highlight an item's status for quick recognition. Badge can be used to show notification count.
 
-Find more detail on below topics of _Badge_ visit https://felix-ui-dev.netlify.app/documentation.html#badge
+To find more detail on the below topics visit documentation on [Badge](https://felix-ui-dev.netlify.app/documentation.html#badge)
 
 -   Badge on icons
 -   Badge on text
@@ -129,7 +129,7 @@ Find more detail on below topics of _Badge_ visit https://felix-ui-dev.netlify.a
 
 The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
 
-Find more detail on below topics of _Button_ visit https://felix-ui-dev.netlify.app/documentation.html#button
+To find more detail on the below topics visit documentation on [Button](https://felix-ui-dev.netlify.app/documentation.html#button)
 
 -   Solid primary buttons
 -   Outlined primary buttons
@@ -142,7 +142,7 @@ Find more detail on below topics of _Button_ visit https://felix-ui-dev.netlify.
 
 Card are used to show user related data collectively, like product details. Cards can be proved very useful while building websites with huge data.
 
-Find more detail on below topics of _Card_ visit https://://felix-ui-dev.netlify.app/documentation.html#card
+To find more detail on the below topics visit documentation on [Card](https://://felix-ui-dev.netlify.app/documentation.html#card)
 
 -   Horizontal text card
 -   Vertical item card
@@ -155,7 +155,7 @@ Find more detail on below topics of _Card_ visit https://://felix-ui-dev.netlify
 
 CSS Grid can be used to structure elements in columns.
 
-Find more detail on below topics of _Grid_ visit https://://felix-ui-dev.netlify.app/documentation.html#grid
+To find more detail on the below topics visit documentation on [Grid](https://://felix-ui-dev.netlify.app/documentation.html#grid)
 
 -   Two columns grid
 -   Three columns grid
@@ -166,7 +166,7 @@ Find more detail on below topics of _Grid_ visit https://://felix-ui-dev.netlify
 
 Image can be used to display large picture on the website.
 
-Find more detail on below topics of _Image_ visit https://://felix-ui-dev.netlify.app/documentation.html#image
+To find more detail on the below topics visit documentation on [Image](https://://felix-ui-dev.netlify.app/documentation.html#image)
 
 -   Responsive image
 -   Round image
@@ -177,7 +177,7 @@ Find more detail on below topics of _Image_ visit https://://felix-ui-dev.netlif
 
 The input is used to get user input in a text field to feed into the system.
 
-Find more detail on below topics of _Input_ visit https://://felix-ui-dev.netlify.app/documentation.html#input
+To find more detail on the below topics visit documentation on [Input](https://://felix-ui-dev.netlify.app/documentation.html#input)
 
 -   Form input
 -   Form input with validation
@@ -188,7 +188,7 @@ Find more detail on below topics of _Input_ visit https://://felix-ui-dev.netlif
 
 List can be used to show a list of items.
 
-Find more detail on below topics of _List_ visit https://://felix-ui-dev.netlify.app/documentation.html#list
+To find more detail on the below topics visit documentation on [List](https://://felix-ui-dev.netlify.app/documentation.html#list)
 
 -   Numbered list
 -   Lowercase alpha list
@@ -204,7 +204,7 @@ Find more detail on below topics of _List_ visit https://://felix-ui-dev.netlify
 
 Modal can be used for creating dialog boxes, to communicate with user.
 
-Find more detail on below topics of _Modal_ visit https://://felix-ui-dev.netlify.app/documentation.html#modal
+To find more detail on the below topics visit documentation on [Modal](https://://felix-ui-dev.netlify.app/documentation.html#modal)
 
 -   Modal component
 -   Modal demo
@@ -215,7 +215,7 @@ Find more detail on below topics of _Modal_ visit https://://felix-ui-dev.netlif
 
 Navigation can be used to give the user facility to navigate between different pages.
 
-Find more detail on below topics of _Navigation_ visit https://://felix-ui-dev.netlify.app/documentation.html#navigationhtml
+To find more detail on the below topics visit documentation on [Navigation](https://://felix-ui-dev.netlify.app/documentation.html#navigation)
 
 -   Desktop variation
 
@@ -225,7 +225,7 @@ Find more detail on below topics of _Navigation_ visit https://://felix-ui-dev.n
 
 Rating can be used to show ratings on the product, or it can also be used for taking ratings from the user.
 
-Find more detail on below topics of _Rating_ visit https://://felix-ui-dev.netlify.app/documentation.html#rating
+To find more detail on the below topics visit documentation on [Rating](https://://felix-ui-dev.netlify.app/documentation.html#rating)
 
 -   Filled rating
 
@@ -235,7 +235,7 @@ Find more detail on below topics of _Rating_ visit https://://felix-ui-dev.netli
 
 Toast can be used to show notifications to the user.
 
-Find more detail on below topics of _Toast_ visit https://://felix-ui-dev.netlify.app/documentation.html#toast
+To find more detail on the below topics visit documentation on [Toast](https://://felix-ui-dev.netlify.app/documentation.html#toast)
 
 -   Success toast
 -   Error toast
@@ -248,7 +248,7 @@ Find more detail on below topics of _Toast_ visit https://://felix-ui-dev.netlif
 
 Sliders are used to decide range for something like sound in videos, price in shopping sites, etc.
 
-Find more detail on below topics of _Slider_ visit https://://felix-ui-dev.netlify.app/documentation.html#slider
+To find more detail on the below topics visit documentation on [Slider](https://://felix-ui-dev.netlify.app/documentation.html#slider)
 
 -   Custom slider
 
