@@ -1,10 +1,15 @@
 .container {
   width: 100vw;
-  height: calc(100vh - 81px);
+  height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 43em) {
+  .container {
+    height: calc(100vh - 72px);
+  }
 }
 .container__text {
   width: 58vw;
@@ -15,7 +20,7 @@
 }
 .container__text h1 {
   margin-bottom: 1.5rem;
-  font-size: 3.6rem;
+  font-size: clamp(1.5rem, 10vw, 3.6rem);
   line-height: 1.4;
 }
 .container__text h1 span {
@@ -25,11 +30,27 @@
   font-size: 1.31rem;
   margin-bottom: 0.5rem;
 }
+@media screen and (max-width: 43em) {
+  .container__text p:first-of-type {
+    font-size: 1rem;
+  }
+}
 .container__text p:last-of-type {
   color: #9f9f9f;
   font-size: 1rem;
   margin: 0 8rem;
   margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 43em) {
+  .container__text p:last-of-type {
+    margin: 0 2.5rem;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 63em) {
+  .container__text {
+    width: 88vw;
+  }
 }
 .container .home-footer {
   position: relative;
@@ -42,15 +63,31 @@
   width: 10rem;
   margin: 0 0.7rem;
 }
+@media screen and (max-width: 43em) {
+  .container .actions button {
+    margin: 1.5rem 0.7rem;
+  }
+}
 .container .svg {
   position: absolute;
   bottom: 0;
+}
+.container .svg path:nth-of-type(1) {
+  fill: var(--svg-layer-1);
+}
+.container .svg path:nth-of-type(2) {
+  fill: var(--svg-layer-2);
 }
 .container .svg.left {
   left: 0;
 }
 .container .svg.right {
   right: 0;
+}
+@media screen and (max-width: 63em) {
+  .container .svg {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

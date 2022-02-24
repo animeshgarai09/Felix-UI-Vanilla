@@ -6,8 +6,8 @@
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
-    background: #ffffff;
-    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    border: 1px solid var(--border-color-3);
     &:hover {
         border-color: var(--border-color-2);
         box-shadow: var(--box-shadow-1);
@@ -60,14 +60,19 @@
         justify-content: center;
     }
     &__image {
-        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
         overflow: hidden;
-        margin: auto;
         min-width: 12rem;
-        max-width: 13rem;
-        max-height: rem(200);
-        border-radius: 0 0 1rem 1rem;
+        border-radius: 1rem;
         a {
+            display: block;
+        }
+        img {
+            max-width: 13rem;
+            max-height: rem(200);
             display: block;
         }
     }
@@ -82,7 +87,7 @@
         flex-direction: column;
         padding: 0.75rem 1.25rem 1.25rem 1.25rem;
         #{$p}__name {
-            color: var(--black);
+            color: var(--card-name);
             font-weight: 600;
             margin: 0.4rem 0;
             font-size: 0.9rem;

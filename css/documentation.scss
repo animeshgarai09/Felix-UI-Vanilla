@@ -99,6 +99,9 @@
     }
     section {
         scroll-margin-top: 7rem;
+        @media screen and (max-width: 43em) {
+            scroll-margin-top: 6rem;
+        }
     }
     .description {
         font-weight: 500;
@@ -107,41 +110,32 @@
 }
 
 .palette {
-    display: flex;
-    // flex-wrap: wrap;
+    display: grid;
     height: rem(140);
+    grid-template-columns: repeat(7, 1fr);
     & > div {
-        color: white;
-        padding: 0.5rem;
-        font-size: 0.8rem;
         display: flex;
         flex: 1;
         justify-content: space-between;
         flex-direction: column;
-        &:nth-child(1) {
-            background-color: var(--primary);
-        }
-        &:nth-child(2) {
-            background-color: var(--black);
-        }
-        &:nth-child(3) {
-            background-color: var(--gray-1);
-        }
-        &:nth-child(4) {
-            background-color: var(--green);
-        }
-        &:nth-child(5) {
-            background-color: var(--red);
-        }
-        &:nth-child(6) {
-            background-color: var(--yellow);
-        }
-        &:nth-child(7) {
-            background-color: var(--blue);
-        }
+        color: white;
+        padding: 0.5rem;
+        font-size: 0.8rem;
     }
 }
-
+.util-colors {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    color: var(--white);
+    span {
+        display: inline-block;
+        padding: 1rem;
+        font-size: 0.8rem;
+        color: inherit;
+        text-align: center;
+        flex: 1;
+    }
+}
 .text-doc-container {
     h1,
     h2,
@@ -261,24 +255,32 @@
         background: radial-gradient(70.02% 150.4% at 20.67% 24.02%, #3bb77e 0%, #3bb77ed9 55.59%, #ffffff00 100%);
     }
 }
-.util-colors {
-    display: flex;
-    color: var(--white);
+.no-scroll {
+    overflow: hidden;
+}
+.col-block {
+    background: var(--primary-light);
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
     span {
-        display: inline-block;
-        padding: 1rem;
-        font-size: 0.8rem;
-        color: inherit;
-        text-align: center;
-        flex: 1;
+        font-size: 1.2rem;
+        font-weight: 600;
+        &:last-of-type {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--gray-2);
+        }
     }
 }
-
 #list .element_container {
     padding-inline: 2rem;
     justify-content: space-between;
 }
-
+.mobile {
+    display: none;
+}
 .list-style-none {
     p {
         margin-bottom: 0;
@@ -299,8 +301,7 @@
     border-collapse: collapse;
     width: 100%;
     max-width: 100%;
-    white-space: nowrap;
-    background-color: white;
+    background-color: var(--table-bg);
     margin-bottom: 2rem;
     td,
     th {
@@ -309,10 +310,11 @@
     }
 
     td {
-        border-right: 1px solid #f8f8f8;
+        border-right: 1px solid var(--table-bg-odd);
         font-size: 0.9rem;
         &:first-child {
             width: 20%;
+            white-space: nowrap;
         }
     }
 
@@ -323,11 +325,91 @@
     }
 
     thead th:nth-child(odd) {
-        color: #ffffff;
         border-radius: 10px 0 0 0;
     }
 
     tr:nth-child(even) {
-        background: #f8f8f8;
+        background: var(--table-bg-odd);
+    }
+}
+
+@media screen and (max-width: 75em) {
+    .horizontal,
+    .text {
+        &.responsive-2 {
+            grid-template-columns: 1fr;
+        }
+        .card:nth-child(2) {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 63em) {
+    .main .side_container {
+        width: 12rem;
+    }
+    .main .container .sub_container {
+        padding: 1.2rem;
+    }
+    .basic.responsive-3,
+    .overlay.responsive-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .overlay .card:nth-child(1) {
+        display: none;
+    }
+    .basic .card:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    .main {
+        padding: 0;
+        .side_container {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 43em) {
+    .palette {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .util-colors {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .col-block {
+        span {
+            font-size: 0.9rem;
+            &:last-of-type {
+                font-size: 0.6rem;
+            }
+        }
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 32em) {
+    .basic.responsive-3,
+    .overlay.responsive-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .basic .card:nth-child(2) {
+        display: none;
+    }
+
+    .hero-container {
+        padding: 1rem 2rem;
+        .text p {
+            width: 70%;
+        }
     }
 }

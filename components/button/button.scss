@@ -8,9 +8,11 @@
         border: 2px solid var(--#{$color});
     }
     color: var(--#{$color});
-    &:hover {
-        background: var(--#{$color});
-        color: var(--white);
+    @media (hover: hover) {
+        &:hover {
+            background: var(--#{$color});
+            color: var(--white);
+        }
     }
 }
 .btn {
@@ -67,8 +69,10 @@
     &--primary {
         background-color: var(--primary);
         color: var(--white);
-        &:hover {
-            background: var(--primary-dark);
+        @media (hover: hover) {
+            &:hover {
+                background: var(--primary-dark);
+            }
         }
     }
     &--info {

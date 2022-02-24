@@ -1,10 +1,13 @@
 .container {
     width: 100vw;
-    height: calc(100vh - 81px);
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 43em) {
+        height: calc(100vh - 72px);
+    }
     &__text {
         width: 58vw;
         text-align: center;
@@ -13,7 +16,7 @@
         z-index: 10;
         h1 {
             margin-bottom: 1.5rem;
-            font-size: 3.6rem;
+            font-size: clamp(1.5rem, 10vw, 3.6rem);
             line-height: 1.4;
             span {
                 color: var(--primary);
@@ -22,12 +25,23 @@
         p:first-of-type {
             font-size: 1.31rem;
             margin-bottom: 0.5rem;
+            @media screen and (max-width: 43em) {
+                font-size: 1rem;
+            }
         }
         p:last-of-type {
             color: #9f9f9f;
             font-size: 1rem;
             margin: 0 8rem;
             margin-bottom: 1.5rem;
+            @media screen and (max-width: 43em) {
+                margin: 0 2.5rem;
+                margin-bottom: 3rem;
+            }
+        }
+
+        @media screen and (max-width: 63em) {
+            width: 88vw;
         }
     }
     .home-footer {
@@ -41,16 +55,28 @@
         button {
             width: 10rem;
             margin: 0 0.7rem;
+            @media screen and (max-width: 43em) {
+                margin: 1.5rem 0.7rem;
+            }
         }
     }
     .svg {
         position: absolute;
         bottom: 0;
+        path:nth-of-type(1) {
+            fill: var(--svg-layer-1);
+        }
+        path:nth-of-type(2) {
+            fill: var(--svg-layer-2);
+        }
         &.left {
             left: 0;
         }
         &.right {
             right: 0;
+        }
+        @media screen and (max-width: 63em) {
+            display: none;
         }
     }
 }

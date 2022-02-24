@@ -6,6 +6,7 @@
     text-transform: uppercase;
     padding: 0.1rem 0.4rem;
     background: #cfcfcf;
+    color: var(--text-color);
     border-radius: rem(3);
     &--green {
         background: var(--green-light);

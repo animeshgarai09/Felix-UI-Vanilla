@@ -4,6 +4,7 @@
   text-transform: uppercase;
   padding: 0.1rem 0.4rem;
   background: #cfcfcf;
+  color: var(--text-color);
   border-radius: 0.1875rem;
 }
 .badge--green {

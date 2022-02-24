@@ -8,6 +8,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: 4rem 1fr 3rem;
+    color: var(--text-color);
     box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 8%) 0px 1px 2px;
     &--success {
         background: var(--green-light);
