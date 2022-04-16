@@ -5,32 +5,32 @@
   display: grid;
   align-items: center;
   grid-template-columns: 4rem 1fr 3rem;
-  color: var(--text-color);
+  color: var(--clr-text-color);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.08) 0px 1px 2px;
 }
 .alert--success {
-  background: var(--green-light);
+  background: var(--clr-green-light);
 }
 .alert--success .alert__icon {
-  background: var(--green);
+  background: var(--clr-green);
 }
 .alert--error {
-  background: var(--red-light);
+  background: var(--clr-red-light);
 }
 .alert--error .alert__icon {
-  background: var(--red);
+  background: var(--clr-red);
 }
 .alert--warning {
-  background: var(--yellow-light);
+  background: var(--clr-yellow-light);
 }
 .alert--warning .alert__icon {
-  background: var(--yellow);
+  background: var(--clr-yellow);
 }
 .alert--info {
-  background: var(--blue-light);
+  background: var(--clr-blue-light);
 }
 .alert--info .alert__icon {
-  background: var(--blue);
+  background: var(--clr-blue);
 }
 .alert__text span {
   display: block;

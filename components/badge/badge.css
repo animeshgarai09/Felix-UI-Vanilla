@@ -4,33 +4,33 @@
   text-transform: uppercase;
   padding: 0.1rem 0.4rem;
   background: #cfcfcf;
-  color: var(--text-color);
+  color: var(--clr-text-color);
   border-radius: 0.1875rem;
 }
 .badge--green {
-  background: var(--green-light);
-  color: var(--green);
-  border-color: var(--green);
+  background: var(--clr-green-light);
+  color: var(--clr-green);
+  border-color: var(--clr-green);
 }
 .badge--red {
-  background: var(--red-light);
-  color: var(--red);
-  border-color: var(--red);
+  background: var(--clr-red-light);
+  color: var(--clr-red);
+  border-color: var(--clr-red);
 }
 .badge--blue {
-  background: var(--blue-light);
-  color: var(--blue);
-  border-color: var(--blue);
+  background: var(--clr-blue-light);
+  color: var(--clr-blue);
+  border-color: var(--clr-blue);
 }
 .badge--yellow {
-  background: var(--yellow-light);
-  color: var(--yellow);
-  border-color: var(--yellow);
+  background: var(--clr-yellow-light);
+  color: var(--clr-yellow);
+  border-color: var(--clr-yellow);
 }
 .badge--primary {
-  background: var(--primary-light);
-  color: var(--primary);
-  border-color: var(--primary);
+  background: var(--clr-primary-light);
+  color: var(--clr-primary);
+  border-color: var(--clr-primary);
 }
 .badge--rounded {
   border-radius: 0.9375rem;
@@ -54,7 +54,7 @@
   align-items: center;
   line-height: 0;
   border-radius: 0.625rem;
-  color: var(--white);
+  color: var(--clr-white);
   font-weight: 600;
   height: 1rem;
   min-width: 1rem;
@@ -62,22 +62,22 @@
   position: absolute;
   top: 2px;
   left: 1.22rem;
-  border: 2px solid var(--white);
+  border: 2px solid var(--clr-white);
 }
 .icon-badge .badge--green {
-  background: var(--green);
+  background: var(--clr-green);
 }
 .icon-badge .badge--red {
-  background: var(--red);
+  background: var(--clr-red);
 }
 .icon-badge .badge--blue {
-  background: var(--blue);
+  background: var(--clr-blue);
 }
 .icon-badge .badge--yellow {
-  background: var(--yellow);
+  background: var(--clr-yellow);
 }
 .icon-badge .badge--primary {
-  background: var(--primary);
+  background: var(--clr-primary);
 }
 
 /*# sourceMappingURL=badge.css.map */

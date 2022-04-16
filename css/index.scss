@@ -19,7 +19,7 @@
             font-size: clamp(1.5rem, 10vw, 3.6rem);
             line-height: 1.4;
             span {
-                color: var(--primary);
+                color: var(--clr-primary);
             }
         }
         p:first-of-type {
@@ -64,10 +64,10 @@
         position: absolute;
         bottom: 0;
         path:nth-of-type(1) {
-            fill: var(--svg-layer-1);
+            fill: var(--clr-svg-layer-1);
         }
         path:nth-of-type(2) {
-            fill: var(--svg-layer-2);
+            fill: var(--clr-svg-layer-2);
         }
         &.left {
             left: 0;

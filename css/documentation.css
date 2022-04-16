@@ -14,14 +14,14 @@
   flex-direction: column;
   height: calc(100vh - 82px - 2rem);
   overflow-y: auto;
-  border-right: 2px solid var(--border-color-3);
+  border-right: 2px solid var(--clr-border-color-3);
 }
 .main .side_container h6 {
   margin-bottom: 1.2rem;
 }
 .main .side_container .link {
   font-size: 15px;
-  color: var(--gray-2);
+  color: var(--clr-gray-2);
   margin-bottom: 1rem;
 }
 .main .side_container .link:before {
@@ -30,20 +30,20 @@
   height: 6px;
   border-radius: 3px;
   margin-right: 1rem;
-  background: var(--gray-1);
+  background: var(--clr-gray-1);
   transition: 0.3s;
 }
 .main .side_container .link:hover {
-  color: var(--primary);
+  color: var(--clr-primary);
 }
 .main .side_container .link:hover:before {
   margin-right: 1.4rem;
 }
 .main .side_container .link.active {
-  color: var(--primary);
+  color: var(--clr-primary);
 }
 .main .side_container .link.active:before {
-  background: var(--primary);
+  background: var(--clr-primary);
 }
 .main .container {
   flex: 1;
@@ -117,7 +117,7 @@
 .util-colors {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  color: var(--white);
+  color: var(--clr-white);
 }
 .util-colors span {
   display: inline-block;
@@ -147,7 +147,7 @@
 .text-doc-container p::before,
 .text-doc-container label::before {
   font-size: 0.8rem;
-  color: var(--gray-1);
+  color: var(--clr-gray-1);
   font-weight: 500;
   width: 4rem;
   margin-right: 1.5rem;
@@ -180,8 +180,8 @@
 }
 
 .element_container {
-  border: 1px solid var(--border-color-3);
-  background: var(--element-container-bg);
+  border: 1px solid var(--clr-border-color-3);
+  background: var(--clr-element-container-bg);
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -217,9 +217,9 @@
   background-size: cover;
   height: 9rem;
   border-radius: 0.5rem;
-  background-color: var(--primary);
+  background-color: var(--clr-primary);
   position: relative;
-  color: var(--white);
+  color: var(--clr-white);
   margin-top: 2rem;
   margin-bottom: 3rem;
   padding: 1rem 3rem;
@@ -258,7 +258,7 @@
 }
 
 .col-block {
-  background: var(--primary-light);
+  background: var(--clr-primary-light);
   text-align: center;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -271,7 +271,7 @@
   display: block;
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--gray-2);
+  color: var(--clr-gray-2);
 }
 
 #list .element_container {
@@ -288,7 +288,7 @@
 }
 .list-style-none span {
   font-size: 0.8rem;
-  color: var(--gray-3);
+  color: var(--clr-gray-3);
 }
 
 .text-doc-container {
@@ -303,7 +303,7 @@
   border-collapse: collapse;
   width: 100%;
   max-width: 100%;
-  background-color: var(--table-bg);
+  background-color: var(--clr-table-bg);
   margin-bottom: 2rem;
 }
 .fl-table td,
@@ -312,7 +312,7 @@
   text-align: left;
 }
 .fl-table td {
-  border-right: 1px solid var(--table-bg-odd);
+  border-right: 1px solid var(--clr-table-bg-odd);
   font-size: 0.9rem;
 }
 .fl-table td:first-child {
@@ -321,14 +321,14 @@
 }
 .fl-table thead th {
   color: #ffffff;
-  background: var(--black);
+  background: var(--clr-secondary);
   border-radius: 0 10px 0 0;
 }
 .fl-table thead th:nth-child(odd) {
   border-radius: 10px 0 0 0;
 }
 .fl-table tr:nth-child(even) {
-  background: var(--table-bg-odd);
+  background: var(--clr-table-bg-odd);
 }
 
 @media screen and (max-width: 75em) {

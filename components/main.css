@@ -10,41 +10,55 @@
 @import url("./slider/slider.css");
 
 :root {
-    --primary: #3bb77e;
-    --primary-light: #def9ec;
-    --primary-dark: #29a56c;
-    --secondary: #fdc040;
-    --black: #2d3748;
-    --white: #ffffff;
-    --text-color: var(--black);
-    --green: #20a779;
-    --green-light: #c6f6d5;
-    --red: #fd4e4e;
-    --red-light: #fed7d7;
-    --yellow: #f8aa1c;
-    --yellow-light: #feebc8;
-    --blue: #007bc3;
-    --blue-light: #bde3f8;
-    --gray-1: #626262;
-    --gray-2: #7c7c7c;
-    --gray-3: #adadad;
-    --border-color: #ececec;
-    --border-color-2: #bce3c9;
-    --border-color-3: #e3e3e3c7;
-    --input-bg: #e5e5e563;
-    --card-bg: #ffffff;
-    --card-name: var(--black);
-    --box-shadow-1: 5px 5px 15px rgb(0 0 0 / 5%);
+    --clr-black: #2d3748;
+    --clr-white: #ffffff;
+    --clr-primary: #3bb57c;
+    --clr-primary-light: #def9ec;
+    --clr-primary-dark: #29a56c;
+    --clr-secondary: var(--clr-black);
+    --clr-accent: #fdc040;
+    --clr-text-color: var(--clr-black);
+    --clr-green: #20a779;
+    --clr-green-light: #c6f6d5;
+    --clr-red: #fd4e4e;
+    --clr-red-light: #fed7d7;
+    --clr-yellow: #f8aa1c;
+    --clr-yellow-light: #feebc8;
+    --clr-blue: #007bc3;
+    --clr-blue-light: #bde3f8;
+    --clr-gray-1: #626262;
+    --clr-gray-2: #7c7c7c;
+    --clr-gray-3: #adadad;
+    --clr-border-color: #ececec;
+    --clr-border-color-2: #bce3c9;
+    --clr-border-color-3: #e3e3e3c7;
+    --clr-input-bg: #e5e5e563;
+    --clr-card-bg: #ffffff;
+    --clr-card-name: var(--clr-black);
+
+    /* Font sizes */
+
+    -fs-900: 2.986rem;
+    -fs-800: 1.488rem;
+    -fs-700: 2.074rem;
+    -fs-600: 1.7281rem;
+    -fs-500: 1.44rem;
+    -fs-400: 1.2rem;
+    -fs-300: 1.0875rem;
+    -fs-200: 1rem;
+    -fs-100: 0.8rem;
+
+    --box-shadow-1: 5px 5px 15px #0000000d;
     --transition: all 0.3s ease 0s;
 }
 
 .dark-theme {
-    --border-color-3: #303030;
-    --primary-light: #2f2f2f;
-    --input-bg: #333333;
-    --card-bg: #1e1e1e;
-    --border-color-2: var(--primary);
-    --card-name: var(--white);
+    --clr-border-color-3: #303030;
+    --clr-primary-light: #2f2f2f;
+    --clr-input-bg: #333333;
+    --clr-card-bg: #1e1e1e;
+    --clr-border-color-2: var(--clr-primary);
+    --clr-card-name: var(--clr-white);
 
     /* #383838 */
     /* #3d3d3d */
@@ -67,40 +81,40 @@ h6 {
 }
 
 h1 {
-    font-size: 2.488125rem;
+    font-size: var(--fs-800);
 }
 
 h2 {
-    font-size: 2.074rem;
+    font-size: var(--fs-700);
 }
 
 h3 {
-    font-size: 1.728125rem;
+    font-size: var(--fs-600);
 }
 
 h4 {
-    font-size: 1.44rem;
+    font-size: var(--fs-500);
 }
 
 h5 {
-    font-size: 1.2rem;
+    font-size: var(--fs-400);
     font-weight: 500;
 }
 
 h6 {
-    font-size: 1.0875rem;
+    font-size: var(--fs-300);
     font-weight: 500;
 }
 
 p {
+    font-size: var(--fs-200);
     margin-top: 0;
-    font-size: 1rem;
 }
 
 label {
+    font-size: var(--fs-100);
     position: relative;
     font-weight: 500;
-    font-size: 0.8rem;
 }
 
 a,
@@ -112,13 +126,13 @@ a:active {
 a {
     display: inline-flex;
     align-items: center;
-    color: var(--primary);
+    color: var(--clr-primary);
     font-weight: 500;
     transition: 0.2s;
 }
 a:hover,
 a:active {
-    color: var(--primary-dark);
+    color: var(--clr-primary-dark);
 }
 
 a i {
@@ -183,72 +197,72 @@ input:focus {
 }
 
 .bg-primary {
-    background-color: var(--primary);
+    background-color: var(--clr-primary);
 }
 .bg-secondary {
-    background-color: var(--black);
+    background-color: var(--clr-secondary);
 }
 .bg-gray {
-    background-color: var(--gray-1);
+    background-color: var(--clr-gray-1);
 }
 .bg-success {
-    background-color: var(--green);
+    background-color: var(--clr-green);
 }
 .bg-warning {
-    background-color: var(--yellow);
+    background-color: var(--clr-yellow);
 }
 .bg-error {
-    background-color: var(--red);
+    background-color: var(--clr-red);
 }
 .bg-info {
-    background-color: var(--blue);
+    background-color: var(--clr-blue);
 }
 
 .bg-primary-light {
-    background-color: var(--primary-light);
+    background-color: var(--clr-primary-light);
 }
 .bg-secondary-light {
     background-color: #9cb7e5;
 }
 .bg-gray-light {
-    background-color: var(--gray-3);
+    background-color: var(--clr-gray-3);
 }
 .bg-success-light {
-    background-color: var(--green-light);
+    background-color: var(--clr-green-light);
 }
 .bg-warning-light {
-    background-color: var(--yellow-light);
+    background-color: var(--clr-yellow-light);
 }
 .bg-error-light {
-    background-color: var(--red-light);
+    background-color: var(--clr-red-light);
 }
 .bg-info-light {
-    background-color: var(--blue-light);
+    background-color: var(--clr-blue-light);
 }
 
 .text-primary {
-    color: var(--primary);
+    color: var(--clr-primary);
 }
 .text-black {
-    color: var(--black);
+    color: var(--clr-secondary);
 }
 .text-white {
-    color: var(--white) !important;
+    color: var(--clr-white) !important;
 }
 .text-gray {
-    color: var(--gray-1);
+    color: var(--clr-gray-1);
 }
 .text-success {
-    color: var(--green);
+    color: var(--clr-green);
 }
 .text-warning {
-    color: var(--yellow);
+    color: var(--clr-yellow);
 }
 .text-error {
-    color: var(--red);
+    color: var(--clr-red);
 }
 .text-info {
-    color: var(--blue);
+    color: var(--clr-blue);
 }
 .text-center {
     text-align: center;

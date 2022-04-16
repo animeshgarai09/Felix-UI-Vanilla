@@ -22,32 +22,32 @@
   width: 5px;
 }
 .toast--success {
-  background-color: var(--green-light);
-  color: var(--green);
+  background-color: var(--clr-green-light);
+  color: var(--clr-green);
 }
 .toast--success span::before {
-  background: var(--green);
+  background: var(--clr-green);
 }
 .toast--error {
-  background-color: var(--red-light);
-  color: var(--red);
+  background-color: var(--clr-red-light);
+  color: var(--clr-red);
 }
 .toast--error span::before {
-  background: var(--red);
+  background: var(--clr-red);
 }
 .toast--info {
-  background-color: var(--blue-light);
-  color: var(--blue);
+  background-color: var(--clr-blue-light);
+  color: var(--clr-blue);
 }
 .toast--info span::before {
-  background: var(--blue);
+  background: var(--clr-blue);
 }
 .toast--warning {
-  background-color: var(--yellow-light);
-  color: var(--yellow);
+  background-color: var(--clr-yellow-light);
+  color: var(--clr-yellow);
 }
 .toast--warning span::before {
-  background: var(--yellow);
+  background: var(--clr-yellow);
 }
 
 /*# sourceMappingURL=toast.css.map */

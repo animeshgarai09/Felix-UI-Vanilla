@@ -13,17 +13,17 @@
         border-radius: 50%;
         height: 1rem;
         width: 1rem;
-        background: var(--primary);
+        background: var(--clr-primary);
         position: absolute;
-        border: 2px solid var(--white);
+        border: 2px solid var(--clr-white);
         &--green {
-            background: var(--green);
+            background: var(--clr-green);
         }
         &--red {
-            background: var(--red);
+            background: var(--clr-red);
         }
         &--yellow {
-            background: var(--yellow);
+            background: var(--clr-yellow);
         }
     }
     &--xs {
@@ -99,7 +99,7 @@
         justify-content: center;
         align-items: center;
         font-weight: 600;
-        background-color: var(--primary);
+        background-color: var(--clr-primary);
         color: #ffffff;
         span {
             line-height: 0;
@@ -117,7 +117,7 @@
         display: inline-flex;
         #{$p} {
             margin-right: -1.4rem;
-            border: 2px solid var(--white);
+            border: 2px solid var(--clr-white);
             &:last-of-type {
                 margin-right: 0;
             }

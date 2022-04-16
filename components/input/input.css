@@ -1,5 +1,5 @@
 .input__group {
-  background: var(--input-bg);
+  background: var(--clr-input-bg);
   border-radius: 0.375rem;
   padding: 0.625rem 0.9375rem;
   width: 100%;
@@ -9,17 +9,17 @@
   margin-bottom: 0.9375rem;
 }
 .input__group:focus-within {
-  border-color: var(--primary);
+  border-color: var(--clr-primary);
 }
 .input__group:focus-within .input__info label {
-  color: var(--primary);
+  color: var(--clr-primary);
 }
 .input__group.input--error {
-  border-color: var(--error);
+  border-color: var(--clr-error);
 }
 .input__group.input--error .input__info label,
 .input__group.input--error .input__info span {
-  color: var(--error);
+  color: var(--clr-error);
 }
 .input__group .input__info {
   width: 100%;
@@ -29,7 +29,7 @@
   margin-bottom: 0.4375rem;
 }
 .input__group .input__info label {
-  color: var(--label-white);
+  color: var(--clr-label-white);
   transition: 0.2s;
   line-height: 1;
 }

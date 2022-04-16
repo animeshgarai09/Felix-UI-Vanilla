@@ -11,18 +11,18 @@
   border-radius: 50%;
   height: 1rem;
   width: 1rem;
-  background: var(--primary);
+  background: var(--clr-primary);
   position: absolute;
-  border: 2px solid var(--white);
+  border: 2px solid var(--clr-white);
 }
 .avatar__badge--green {
-  background: var(--green);
+  background: var(--clr-green);
 }
 .avatar__badge--red {
-  background: var(--red);
+  background: var(--clr-red);
 }
 .avatar__badge--yellow {
-  background: var(--yellow);
+  background: var(--clr-yellow);
 }
 .avatar--xs {
   width: 1.5rem;
@@ -96,7 +96,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 600;
-  background-color: var(--primary);
+  background-color: var(--clr-primary);
   color: #ffffff;
 }
 .avatar--text span {
@@ -115,7 +115,7 @@
 }
 .avatar__group .avatar {
   margin-right: -1.4rem;
-  border: 2px solid var(--white);
+  border: 2px solid var(--clr-white);
 }
 .avatar__group .avatar:last-of-type {
   margin-right: 0;

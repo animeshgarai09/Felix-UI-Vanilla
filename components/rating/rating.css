@@ -1,11 +1,11 @@
 .rating i {
-  color: var(--gray-3);
+  color: var(--clr-gray-3);
 }
 .rating input {
   display: none;
 }
 .rating input:checked + i {
-  color: var(--yellow);
+  color: var(--clr-yellow);
 }
 .rating span {
   font-size: 0.8rem;

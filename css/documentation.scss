@@ -14,13 +14,13 @@
         flex-direction: column;
         height: calc(100vh - 82px - 2rem);
         overflow-y: auto;
-        border-right: 2px solid var(--border-color-3);
+        border-right: 2px solid var(--clr-border-color-3);
         h6 {
             margin-bottom: 1.2rem;
         }
         .link {
             font-size: 15px;
-            color: var(--gray-2);
+            color: var(--clr-gray-2);
             margin-bottom: 1rem;
             &:before {
                 content: "";
@@ -28,19 +28,19 @@
                 height: 6px;
                 border-radius: 3px;
                 margin-right: 1rem;
-                background: var(--gray-1);
+                background: var(--clr-gray-1);
                 transition: 0.3s;
             }
             &:hover {
-                color: var(--primary);
+                color: var(--clr-primary);
                 &:before {
                     margin-right: 1.4rem;
                 }
             }
             &.active {
-                color: var(--primary);
+                color: var(--clr-primary);
                 &:before {
-                    background: var(--primary);
+                    background: var(--clr-primary);
                 }
             }
         }
@@ -126,7 +126,7 @@
 .util-colors {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    color: var(--white);
+    color: var(--clr-white);
     span {
         display: inline-block;
         padding: 1rem;
@@ -149,7 +149,7 @@
         &::before {
             font-size: 0.8rem;
             // margin-right: 1.5rem;
-            color: var(--gray-1);
+            color: var(--clr-gray-1);
             font-weight: 500;
             width: 4rem;
             margin-right: 1.5rem;
@@ -184,8 +184,8 @@
 }
 
 .element_container {
-    border: 1px solid var(--border-color-3);
-    background: var(--element-container-bg);
+    border: 1px solid var(--clr-border-color-3);
+    background: var(--clr-element-container-bg);
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -220,9 +220,9 @@
     background-size: cover;
     height: 9rem;
     border-radius: 0.5rem;
-    background-color: var(--primary);
+    background-color: var(--clr-primary);
     position: relative;
-    color: var(--white);
+    color: var(--clr-white);
     margin-top: 2rem;
     margin-bottom: 3rem;
     padding: 1rem 3rem;
@@ -259,7 +259,7 @@
     overflow: hidden;
 }
 .col-block {
-    background: var(--primary-light);
+    background: var(--clr-primary-light);
     text-align: center;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -270,7 +270,7 @@
             display: block;
             font-size: 0.75rem;
             font-weight: 500;
-            color: var(--gray-2);
+            color: var(--clr-gray-2);
         }
     }
 }
@@ -287,7 +287,7 @@
     }
     span {
         font-size: 0.8rem;
-        color: var(--gray-3);
+        color: var(--clr-gray-3);
     }
 }
 .text-doc-container {
@@ -301,7 +301,7 @@
     border-collapse: collapse;
     width: 100%;
     max-width: 100%;
-    background-color: var(--table-bg);
+    background-color: var(--clr-table-bg);
     margin-bottom: 2rem;
     td,
     th {
@@ -310,7 +310,7 @@
     }
 
     td {
-        border-right: 1px solid var(--table-bg-odd);
+        border-right: 1px solid var(--clr-table-bg-odd);
         font-size: 0.9rem;
         &:first-child {
             width: 20%;
@@ -320,7 +320,7 @@
 
     thead th {
         color: #ffffff;
-        background: var(--black);
+        background: var(--clr-secondary);
         border-radius: 0 10px 0 0;
     }
 
@@ -329,7 +329,7 @@
     }
 
     tr:nth-child(even) {
-        background: var(--table-bg-odd);
+        background: var(--clr-table-bg-odd);
     }
 }
 

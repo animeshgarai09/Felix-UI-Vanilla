@@ -23,34 +23,34 @@
     }
 
     &--success {
-        background-color: var(--green-light);
-        color: var(--green);
+        background-color: var(--clr-green-light);
+        color: var(--clr-green);
         span::before {
-            background: var(--green);
+            background: var(--clr-green);
         }
     }
 
     &--error {
-        background-color: var(--red-light);
-        color: var(--red);
+        background-color: var(--clr-red-light);
+        color: var(--clr-red);
         span::before {
-            background: var(--red);
+            background: var(--clr-red);
         }
     }
 
     &--info {
-        background-color: var(--blue-light);
-        color: var(--blue);
+        background-color: var(--clr-blue-light);
+        color: var(--clr-blue);
         span::before {
-            background: var(--blue);
+            background: var(--clr-blue);
         }
     }
 
     &--warning {
-        background-color: var(--yellow-light);
-        color: var(--yellow);
+        background-color: var(--clr-yellow-light);
+        color: var(--clr-yellow);
         span::before {
-            background: var(--yellow);
+            background: var(--clr-yellow);
         }
     }
 }

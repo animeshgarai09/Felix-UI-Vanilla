@@ -8,30 +8,30 @@
     display: grid;
     align-items: center;
     grid-template-columns: 4rem 1fr 3rem;
-    color: var(--text-color);
+    color: var(--clr-text-color);
     box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 8%) 0px 1px 2px;
     &--success {
-        background: var(--green-light);
+        background: var(--clr-green-light);
         #{$p}__icon {
-            background: var(--green);
+            background: var(--clr-green);
         }
     }
     &--error {
-        background: var(--red-light);
+        background: var(--clr-red-light);
         #{$p}__icon {
-            background: var(--red);
+            background: var(--clr-red);
         }
     }
     &--warning {
-        background: var(--yellow-light);
+        background: var(--clr-yellow-light);
         #{$p}__icon {
-            background: var(--yellow);
+            background: var(--clr-yellow);
         }
     }
     &--info {
-        background: var(--blue-light);
+        background: var(--clr-blue-light);
         #{$p}__icon {
-            background: var(--blue);
+            background: var(--clr-blue);
         }
     }
     &__text {

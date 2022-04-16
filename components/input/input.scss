@@ -1,7 +1,7 @@
 @import "../../utils/functions.scss";
 
 .input__group {
-    background: var(--input-bg);
+    background: var(--clr-input-bg);
     border-radius: rem(6);
     padding: rem(10) rem(15);
     width: 100%;
@@ -10,17 +10,17 @@
     position: relative;
     margin-bottom: rem(15);
     &:focus-within {
-        border-color: var(--primary);
+        border-color: var(--clr-primary);
         .input__info label {
-            color: var(--primary);
+            color: var(--clr-primary);
         }
     }
     &.input--error {
-        border-color: var(--error);
+        border-color: var(--clr-error);
         .input__info {
             label,
             span {
-                color: var(--error);
+                color: var(--clr-error);
             }
         }
     }
@@ -31,7 +31,7 @@
         justify-content: space-between;
         margin-bottom: rem(7);
         label {
-            color: var(--label-white);
+            color: var(--clr-label-white);
             transition: 0.2s;
             line-height: 1;
         }

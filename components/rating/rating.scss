@@ -1,12 +1,12 @@
 .rating {
     i {
-        color: var(--gray-3);
+        color: var(--clr-gray-3);
     }
     input {
         display: none;
     }
     input:checked + i {
-        color: var(--yellow);
+        color: var(--clr-yellow);
     }
     span {
         font-size: 0.8rem;
